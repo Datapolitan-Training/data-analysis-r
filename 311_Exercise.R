@@ -3,7 +3,7 @@
 # LOAD DATASET
 #key command: read.csv()
 
-mydata <- read.csv(url("FROM GITHUB"))
+mydata <- read.csv(url("fix this"))
 
 
 # EXPLORE DATA

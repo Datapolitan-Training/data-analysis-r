@@ -20,6 +20,5 @@ median(faithful$waiting)
 hist(faithful$waiting)
 hist(faithful$eruptions)
 
-attach(faithful)
-plot(eruptions, waiting)
-abline(lm(waiting~eruptions), col="red")
+plot(faithful)
+abline(lm(faithful$waiting~faithful$eruptions), col="red")
