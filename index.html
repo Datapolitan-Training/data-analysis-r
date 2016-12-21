@@ -136,20 +136,41 @@ class:center,middle
 
 # R Syntax
 
+<!-- fix pauses between bullets -->
+
 + command(dataset)
 + example: View(faithful)
+
 + command(dataset$column)
 + example: mean(faithful$waiting)
-+ ?help 
+
++ ?help
 + example: ?help(faithful)
 
 ---
 
 # R Syntax Exercise
 
+<!-- Add image of geyser -->
 [Ole Faithful](\faithful.R)
+<!-- What's the best way to open this exercise in R Studio in DHBox?-->
 
 ---
+
+class:center, middle
+
+#10 MINUTE BREAK
+
+---
+
+# 311 Data Exercise
+
++ What kind of data is it?
++ What trends can we find?
++ How can we visualize the data?
+
+---
+
 class:center,middle
 # WRAP-UP
 
@@ -158,7 +179,20 @@ class:center,middle
 # What We've Covered
 --
 
-+
++ R as a language
+--
+
++ RStudio
+--
+
++ Open a dataset
+--
+
++ Explore a dataset
+
+--
+
++ Visualize a dataset
 --
 
 + What else?
@@ -168,10 +202,13 @@ class:center,middle
 # Resources
 --
 
-+ [Stack Overflow](http://stackoverflow.com/) - One of the best Q&A sites for technical questions of all kinds
++ [Stat Methods](http://statmethods.net) - Great documentation for doing data analysis in R.
 --
 
-+ [Data Science Cheatsheet](https://github.com/govex/Data-Science) - Includes various terms and concepts related to data science
++ [UCLA Stats](http://www.ats.ucla.edu/stat/) - Many examples of statistical analysis with comparisons between R, Stata, SPSS, etc.
+--
+
++ [Stack Overflow](http://stackoverflow.com/) - One of the best Q&A sites for technical questions of all kinds
 
 ---
 
@@ -190,6 +227,42 @@ class:center,middle
 
 class:center, middle
 #THANK YOU!
+
+---
+
+# Exploring Data
+
++ View(): show dataset as spreadsheet in Viewer
++ str(): identify data type and structure
++ nrow(): identify the number of rows
++ ncol(): identify the number of columns
++ colnames(): list the name of every column
+
+
+---
+
+# Manipulate Data
+
++ attach(): use this data
+
+---
+
+# Calculating Summary statistics
+
++ min(): identify minimum value
++ max(): identify maximum value
++ median(): calculate median value
++ mean(): calculate mean value
+
+---
+
+#Visualizing Data
+
++ hist(): make a histogram
++ plot(): plot two variables along an x-y axis
++ abline(): add a trendline to a plot
+
+
 
 
     </textarea>
