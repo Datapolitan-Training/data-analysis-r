@@ -18,10 +18,11 @@
 + Introduction
 + What is R?
   + How is R different than Excel?
-+ Walkthru of R Studio
++ Walkthrough of R Studio
++ Intro to R Syntax
 + Activity
-  + Download or share dataset
-  + Load Data into Dataframe
-  + Inspect fields and identify missing values
-  + Calculate summary statistics
-  + Create a histogram
+  + Load dataset
+  + Explore dataset
+  + Make a table
+  + Make a boxplot
++ Resources
