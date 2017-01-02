@@ -3,8 +3,7 @@
 # LOAD DATASET
 #key command: read.csv()
 
-mydata <- read.csv(url("fix this"))
-
+mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requests_Oct15_Nov20.csv", header=TRUE, sep=",")
 
 # EXPLORE DATA
 # key commands: nrow(), ncol(), colnames(), head(), str()

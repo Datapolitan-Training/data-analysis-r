@@ -35,7 +35,7 @@ class:center,middle
 # Introduce Yourself to Your Neighbor
 + Name
 + Agency and Office
-+ The most interesting data related project you’ve worked on
++ Previous Programming Experience
 
 ---
 
@@ -156,26 +156,38 @@ class:center,middle
 
 # R Syntax
 
-+ command(dataset)
-+ example: View(faithful)
---
+```R
+# basic command
 
-+ command(dataset$column)
-+ example: mean(faithful$waiting)
---
+command(dataset)
+View(faithful)
 
-+ ?help
-+ example: ?help(faithful)
+```
+```R
+# select a column
+
+command(dataset$column)
+mean(faithful$waiting)
+
+```
+```R
+# get help
+
+?help
+?help(faithful)
+
+```
 
 ---
 
 # Old Faithful Exercise
 
+## > [Download Exercise](faithful.R)
+
 ![img-center-70](images/old_faithful.jpeg)
 .caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
 
-+[Download Exercise](/faithful.R)
-<!-- What's the best way to open this exercise in R Studio in DHBox?-->
+
 
 ---
 
@@ -186,6 +198,8 @@ class:center, middle
 ---
 
 # 311 Data Exercise
+
+## > [Download Exercise](311_Exercise.R)
 
 + What kind of data is it?
 + What trends can we find?
@@ -223,26 +237,33 @@ class:center,middle
 # Resources
 --
 
-+ [Stat Methods](http://statmethods.net) - Great documentation for doing data analysis in R.
++ [Stat Methods](http://statmethods.net) - Great documentation for doing data analysis in R
 --
 
 + [UCLA Stats](http://www.ats.ucla.edu/stat/) - Many examples of statistical analysis with comparisons between R, Stata, SPSS, etc.
 --
 
 + [Stack Overflow](http://stackoverflow.com/) - One of the best Q&A sites for technical questions of all kinds
+--
+
++ [R Cookbook](http://www.cookbook-r.com/) - Free online walkthrough of the basics
 
 ---
 
 # Contact Information
-## Richard Dunks
-+ Email: richard[at]datapolitan[dot]com
-+ Blog: http://blog.datapolitan.com
-+ Twitter: [@datapolitan](https://twitter.com/datapolitan)
-
 ## Julia Marden
-+ Email: julia[at]tinypanther[dot]com
+```
++ Email: julia@tinypanther.com
 + Website: http://tinypanther.com
-+ Twitter: [@juliaem](https://twitter.com/juliaem)
++ Twitter: @juliaem
+```
+
+## Richard Dunks
+```R
++ Email: richard@datapolitan.com
++ Blog: http://blog.datapolitan.com
++ Twitter: @datapolitan
+```
 
 ---
 
@@ -253,43 +274,93 @@ class:center, middle
 
 # Exploring Data
 
-+ View(): show dataset as spreadsheet in Viewer
-+ str(): identify data type and structure
-+ nrow(): identify the number of rows
-+ ncol(): identify the number of columns
-+ colnames(): list the name of every column
-
+```R
+View()
+# show dataset as spreadsheet in Viewer
+```
+```R
+str()
+# identify data type and structure
+```
+```R
+nrow()
+# identify the number of rows
+```
+```R
+ncol()
+# identify the number of columns
+```
+```R
+colnames()
+# list the name of every column
+```
 
 ---
 
 # Manipulate Data
 
-+ sort(): sort the values in a column
-+ data.frame(): structure data into a matrix
-+ subset(): extract data from a dataframe
+```R
+sort()
+# sort the values in a column
+```
+```R
+data.frame()
+# structure data into a matrix
+```
+```R
+subset()
+# extract data from a dataframe
+```
 
 ---
 
 # Calculating Summary statistics
 
-+ min(): identify minimum value
-+ max(): identify maximum value
-+ median(): calculate median value
-+ mean(): calculate mean value
+```R
+min()
+# identify minimum value
+```
+```R
+max()
+# identify maximum value
+```
+```R
+median()
+# calculate median value
+```
+```R
+mean()
+# calculate mean value
+```
 
 ---
 
 #Visualizing Data
 
-+ hist(): make a chart with numeric data
-+ plot(): plot two numeric variables along an x-y axis
-+ abline(): add a trendline to a plot
-+ table(): make a table with factor data
-+ prop.table(): make a table with percentages
-+ barplot(): make a chart with factor data
-
-
-
+```R
+hist()
+# make a chart with numeric data
+```
+```R
+plot()
+# plot two numeric variables along an x-y axis
+```
+```R
+abline()
+# add a trendline to a plot
+```
+```R
+table()
+# make a table with factor data
+```
+```R
+prop.table()
+# make a table with percentages
+```
+```R
+barplot()
+# make a chart with factor data
+```
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
