@@ -27,7 +27,7 @@ summary(is.na(mydata$Complaint.Type))
 
 #make a table showing the number of complaints from ea boro
 borocounts <- table(mydata$Borough)
-borocounts 
+borocounts
 
 #make a table showing the percentage of complaints from ea boro
 prop.table(borocounts)
@@ -51,7 +51,7 @@ bxcomplaints <- table(bronx$Complaint.Type)
 sort(bxcomplaints)
 
 bxdf <- data.frame(bxcomplaints)
-bxtopfive <- subset(bxcomplaints, Freq > 2000)
+bxtopfive <- subset(bxdf, Freq > 2000)
 bxtopfive
 
 # PLOTS
@@ -60,6 +60,5 @@ bxtopfive
 
 barplot(borocounts, main="Complaints by Borough", ylab="Number of Complaints")
 
-#Data Analytics with R by Richard Dunks and Julia Marden is licensed under a 
+#Data Analytics with R by Richard Dunks and Julia Marden is licensed under a
 #Creative Commons Attribution-ShareAlike 4.0 International License.
-
