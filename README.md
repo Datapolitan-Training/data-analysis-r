@@ -16,13 +16,34 @@
 
 # Outline
 + Introduction
-+ What is R?
+  + Class schedule and expectations
+  + What is R?
+  + Overview of Data Analysis
++ Today's Question
+  + Understanding Noise Complaints in 311 Data
+  + See finished example
++ Data Collection
+  + Open 311 dataset in R Studio
+  + Explore data structures and types
+  + Learn basic syntax
++ Data Exploration
+  + Calculate summary statistics
+  + Identify columns, levels, and known issues
+  + Explore R Studio console
++ Data Manipulation
+  + Introduction to R packages
+  + Learn to create new fields and calculate new values
+  + Explore algorithmic ways to tackle problems in R  
++ Form Hypotheses
+  + What questions can we ask of this data?
+  + How could we structure our data analysis?
++ Debugging
+  + Understand difference between syntax and semantic errors
+  + Review pro-tips for problem-solving and debugging
++ Data Visualization
+  + Create a table that answers an above question
+  + Create a plot that answers an above question
++ Wrap Up
   + How is R different than Excel?
-+ Walkthrough of R Studio
-+ Intro to R Syntax
-+ Activity
-  + Load dataset
-  + Explore dataset
-  + Make a table
-  + Make a boxplot
+  + Examples of R in government work
 + Resources
