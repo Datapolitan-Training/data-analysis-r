@@ -98,9 +98,18 @@ name:housekeeping
 
 + <!-- insert example-->
 
+???
+Students will understand the problem we're seeking to solve in class
+Students will learn by example the value of problem setting.
+This will be done by writing out explicit problem statement for 311 Noise, possibly vision 0 db after we have exercise.
+
 ---
 
 # Data Collection
+
+???
+Students will understand how to get data into R
+This will be done by bullet points about the process
 
 ---
 
@@ -109,7 +118,10 @@ name:housekeeping
 ![img-center-80](images/rstudio.png)
 ### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
 
-<!-- Introduce students to Console, Environment, Plots/Packages -->
+???
++ Introduce students to Console, Environment
++ Students will be familiar with the key features of the console for the exercises to come
++ This will be done by live demo and verbal discussion
 
 ---
 
@@ -118,6 +130,28 @@ name:housekeeping
 ```
 View(faithful)
 ```
+<!-- insert an image of the data -->
+<!-- Add code snippets for str and summary -->
+
+???
++ Students will open and load a simple dataset.
++ They will inspect the data in the viewer and confirm it loaded properly.
++ This will be done by live demo of code 
++ Students will be writing code themselves
++ Demo will be accomplished
+
+---
+
+# R Data Types
+
++ [Numeric](http://www.r-tutor.com/r-introduction/basic-data-types/numeric)
++ [Factor](https://www.stat.berkeley.edu/classes/s133/factors.html)
++ How do you know what kind of data you have?
+
+???
++ Students will understand a few of the different data types in R
++ They will use the `str` and `summary` command
++ This will be done with a live demo of code
 
 ---
 
@@ -126,12 +160,15 @@ View(faithful)
 + [Vectors](http://www.r-tutor.com/r-introduction/vector) and [matrices](http://www.r-tutor.com/r-introduction/matrix)
 
 + [Lists](http://www.r-tutor.com/r-introduction/list) and [data frames](http://www.r-tutor.com/r-introduction/data-frame)
++ Different structures allow you to do different things
++ We'll get into that more later
++ How can you tell?
 
----
-
-# R Data Types
-
-+ [Numeric](http://www.r-tutor.com/r-introduction/basic-data-types/numeric) vs. [factor](https://www.stat.berkeley.edu/classes/s133/factors.html)
+???
++ Students will review work done in simple data load
++ They will learn key elements of data structures based on Faithful data
++ This will be done with live demo and discussion
++ They will use the `str` and `summary` command
 
 ---
 
@@ -139,6 +176,10 @@ View(faithful)
 
 ![img-center-80](images/syntax.png)
 .caption[Image Credit: AnonMoos, Public Domain via [Wikipedia](https://commons.wikimedia.org/wiki/File%3ABasic_constituent_structure_analysis_English_sentence.svg)]
+
+???
++ Students will get vocabulary for accomplishing tasks in code
++ This will be done with an overview discussion
 
 ---
 
@@ -166,9 +207,17 @@ mean(faithful$waiting)
 
 ```
 
+???
++ Students will be guided through basic syntax in R for simple tasks
++ This will be done with guided exercise/code demo
+
 ---
 
+class:center,middle
 # Data Exploration
+
+???
+This is the start of exercise 2 in summarizing available data
 
 ---
 
@@ -179,9 +228,22 @@ mean(faithful$waiting)
 ![img-center-70](images/old_faithful.jpeg)
 .caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
 
+???
++ Students will download script with prepared code snippets to run
++ Students will learn the steps of running summary statistics in R
+
+
 ---
 
-# Identify Data Types and structures
+exclude:true
+# Do This
++ Open the dataset
++ Understand the data structure
++ Calculate summary statistics
++ Plot the data
+
+???
+Instructions for the self-paced section with data
 
 ---
 
@@ -194,27 +256,52 @@ mean(faithful$waiting)
 + Open dataset
 + Identify data structure for the whole dataset and data types for 3 columns
 
+???
++ Students will conduct the same commands from Faithful with 311 exercise
++ Students will hit the roadblocks
++ Can't run summary statistics
++ Exercise will be run through script showing comments (not on slide)
++ Script will mirror the Faithful with intention of not working
+
 ---
 
+class:center,middle
 # Data Manipulation
+## i.e cleaning
 
-+ ie cleaning
+???
++ start of section discussing manipulating data
++ picking up pieces from exercise where script failed
++ start of exercise 3
 
 ---
 
 # Packages
 
+???
++ Students will understand the purpose and value of packages
++ This will be done with a discussion
+
 ---
 
 # dplyr
+
+???
++ Walk through previous example and add in packages
++ teach dplyr by making it work with example
 
 ---
 
 # ggplot2
 
+???
++ repeat from above
 ---
 
 # lubridate
+
+???
++ repeat from above
 
 ---
 
@@ -223,9 +310,17 @@ mean(faithful$waiting)
 + definition
 + problem-solving
 
+???
++ define algorithm as instructions for cake
++ Lecture with images
+
 ---
 
+class:center,middle
 # Test Hypotheses
+
+???
++ Students will understand better the purpose of using code for analysis
 
 ---
 
@@ -235,27 +330,56 @@ mean(faithful$waiting)
 + Where?
 + When?
 
+???
++ Prompts for starting your investigation of the data
++ Students will have a way to start exploring data
++ Discussion leading into guided exercise
+
 ---
 
 # 311 Exercise
 
 + count # of incidents in each borough
 
+???
++ An example question of the 311 dataset
++ students will be walked through the exercise with a script
++ Prompts in the script with a more specific question
++ incidents per borough -> distribution of complaints 
+
+
 ---
 
+class:center,middle
 # Data Verification
+
+???
++ Start of new section and exercise
 
 ---
 
 # Debugging
 
-+ Semantic vs. syntax
++ Semantic vs. syntax errors
++ Reviewing documentation
+
+???
++ Students will be introduced to key concepts in identifying and resolving errors
++ This will be done with a lecture/discussion leading into an exercise
++ Class exercise finding errors in code -> slide with code snippets in Markdown with errors
++ deal with issue of correctness
 
 ---
 
 # Exercise:
 
-+ Debug your neighbor's R Script  and verify results
++ Debug your neighbor's R Script and verify results
+
+???
++ Students will examine another student's code, run the code, and fix any errors
++ Students will have a better understanding of how to think in code
++ Goal is to get students talking to each other about their code
++ have documentation at end of slides
 
 ---
 
@@ -265,6 +389,17 @@ mean(faithful$waiting)
 
 ---
 
+class:middle,center
+# Code Review
+
+???
++ Students will review select code examples
++ Goal is to model a collaborative process for data analysis
++ Time buffer for end of class
+
+---
+
+class:center,middle
 # Wrap Up
 
 ---
@@ -278,6 +413,8 @@ mean(faithful$waiting)
 + Different structures and data types
 
 + More potential
+???
++ Students will be able to compare and contrast the two tools for data analysis
 
 ---
 
@@ -286,12 +423,18 @@ mean(faithful$waiting)
 ![img-center-40](images/neworleansfire.jpeg)
 .caption[Image Credit: Michael Barnett [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons]
 
+???
++ Students will be inspired to use their knowledge in practical applications
+
 ---
 
 # Targeted Outreach Saves Lives
 
 ![img-center-90](images/nolasmokealarm.png)
 .caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
+???
++ Students will be inspired to use their knowledge in practical applications
 
 
 ---
@@ -301,6 +444,8 @@ mean(faithful$waiting)
 ![img-center-90](images/nolaimpact.png)
 .caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
 
+???
++ Students will be inspired to use their knowledge in practical applications
 
 ---
 
@@ -318,6 +463,9 @@ mean(faithful$waiting)
 
 + What else?
 
+???
++ Students will review progress and give feedback on key takeaways
+
 ---
 
 # Final Thoughts
@@ -331,6 +479,8 @@ mean(faithful$waiting)
 
 + You should be able to [download R and RStudio on your work computer](https://ayeimanol-r.net/2014/01/16/getting-started-installation-of-rstudio-and-some-packages-using-ggplot-to-make-a-simple-plot/) (Use the zip/tarball option)
 
+???
++ Instructors will reinforce key learning points with students
 
 ---
 
@@ -344,6 +494,9 @@ mean(faithful$waiting)
 + [Stack Overflow](http://stackoverflow.com/) - One of the best Q&A sites for technical questions of all kinds
 
 + [R Cookbook](http://www.cookbook-r.com/) - Free online walkthrough of the basics
+
+???
++ Students will have key resources for moving forward in their learning
 
 ---
 
