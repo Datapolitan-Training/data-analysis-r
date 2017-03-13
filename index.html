@@ -25,12 +25,6 @@ class:center, middle
 ### Follow along at: http://bit.ly/data-analysis-r<br>See the code at: http://bit.ly/data-analysis-r-code
 ![img-center-70](images/tp_dp.png)
 
-
----
-
-class:center,middle
-# Welcome
-
 ---
 
 # Introduce Yourself to Your Neighbor
@@ -38,64 +32,56 @@ class:center,middle
 + Agency and Office
 + Previous Programming Experience
 
+#Fill out Participant Form
+
 ---
 
 # What to Expect Today
---
+
+<!-- Need to update this -->
 
 + 10:15 – Welcome and Introductions
---
 
 + 10:25 – What is R?
---
 
 + 11:15 – 10 min break
---
 
 + 11:25 - Exercise
---
 
 + 12:30 – Dismissal
 
 ---
 
-# What Not To Expect Today
---
-
-+ Becoming a R expert<br>
---
-(That takes much longer than we have)
---
-
-+ Becoming a data analytics pro<br>
---
-(Also not possible in the time we have)
---
-
-+ Becoming a visualization wizard<br>
---
-(Yep, you guessed it)
+#What We're Making
+<!-- insert finished data viz -->
 
 ---
-
+name:housekeeping
 # Housekeeping
---
-
+<!-- Update this  -->
 + We’ll have one 10 minute break
---
 
 + Class will start promptly after break
---
 
 + Feel free to use the bathroom if you need during class
---
 
 + Please take any phone conversations into the hall to not disrupt the class
 
 ---
 
+![img-right-40](images/r_logo.png)
+# What is R?
+
++ Statistical programming language
+
++ [Open-source](https://opensource.com/resources/what-open-source)
+
++ Made for and by people who work with data
+
++ Used for data analysis
+---
+
 # What is Analysis?
---
 
 >“Analysis is simply the pursuit of understanding, usually through detailed inspection or comparison”
 
@@ -103,56 +89,18 @@ class:center,middle
 
 ---
 
-# New Orleans Distributes Smoke Alarms
-
-![img-center-40](images/neworleansfire.jpeg)
-.caption[Image Credit: Michael Barnett [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons]
+# 6 Steps of Analysis
+![img-center-90](images/sixphases_1.jpg)
 
 ---
 
-# Targeted Outreach Saves Lives
+# Problem Statement
 
-![img-center-90](images/nolasmokealarm.png)
-.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
-
++ <!-- insert example-->
 
 ---
 
-# Targeted Outreach Saves Lives
-
-![img-center-90](images/nolaimpact.png)
-.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
-
-
----
-
-![img-right-40](images/r_logo.png)
-# What is R?
---
-
-+ Statistical programming language
---
-
-+ [Open-source](https://opensource.com/resources/what-open-source)
---
-
-+ Made for and by people who work with data
-
----
-
-# R vs. Excel
---
-
-+ Language vs. program
---
-
-+ Big data
---
-
-+ Different structures and data types
---
-
-+ More potential
+# Data Collection
 
 ---
 
@@ -165,14 +113,23 @@ class:center,middle
 
 ---
 
-# R Data
---
+# Exercise: Old Faithful
+
+```
+View(faithful)
+```
+
+---
+
+# R Data Structures
 
 + [Vectors](http://www.r-tutor.com/r-introduction/vector) and [matrices](http://www.r-tutor.com/r-introduction/matrix)
---
 
 + [Lists](http://www.r-tutor.com/r-introduction/list) and [data frames](http://www.r-tutor.com/r-introduction/data-frame)
---
+
+---
+
+# R Data Types
 
 + [Numeric](http://www.r-tutor.com/r-introduction/basic-data-types/numeric) vs. [factor](https://www.stat.berkeley.edu/classes/s133/factors.html)
 
@@ -211,55 +168,153 @@ mean(faithful$waiting)
 
 ---
 
-# Old Faithful Exercise
+# Data Exploration
+
+---
+
+# Exercise: Summary Statistics
 
 ## > [Download Exercise](faithful.R)
 
 ![img-center-70](images/old_faithful.jpeg)
 .caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
 
+---
 
+# Identify Data Types and structures
 
 ---
 
-class:center, middle
+# Exercise: 311 Data
 
-#10 MINUTE BREAK
-
----
-
-# 311 Data Exercise
+<!-- Repeat skills with 311 dataset-->
 
 ## > [Download Exercise](311_Exercise.R)
 
-+ What kind of data is it?
-+ What trends can we find?
-+ How can we visualize the data?
++ Open dataset
++ Identify data structure for the whole dataset and data types for 3 columns
 
 ---
 
-class:center,middle
-# WRAP-UP
+# Data Manipulation
+
++ ie cleaning
+
+---
+
+# Packages
+
+---
+
+# dplyr
+
+---
+
+# ggplot2
+
+---
+
+# lubridate
+
+---
+
+# Algorithms
+
++ definition
++ problem-solving
+
+---
+
+# Test Hypotheses
+
+---
+
+# Questions
+
++ How many?
++ Where?
++ When?
+
+---
+
+# 311 Exercise
+
++ count # of incidents in each borough
+
+---
+
+# Data Verification
+
+---
+
+# Debugging
+
++ Semantic vs. syntax
+
+---
+
+# Exercise:
+
++ Debug your neighbor's R Script  and verify results
+
+---
+
+# Submit Code
+
+<!-- insert link to Google form -->
+
+---
+
+# Wrap Up
+
+---
+
+# R vs. Excel
+
++ Language vs. program
+
++ Big data
+
++ Different structures and data types
+
++ More potential
+
+---
+
+# New Orleans Distributes Smoke Alarms
+
+![img-center-40](images/neworleansfire.jpeg)
+.caption[Image Credit: Michael Barnett [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons]
+
+---
+
+# Targeted Outreach Saves Lives
+
+![img-center-90](images/nolasmokealarm.png)
+.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
+
+---
+
+# Targeted Outreach Saves Lives
+
+![img-center-90](images/nolaimpact.png)
+.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
 
 ---
 
 # What We've Covered
---
 
 + R as a language
---
 
 + [RStudio](https://www.rstudio.com/)
---
 
 + Open a dataset
---
 
 + Explore a dataset
---
 
 + Visualize a dataset
---
 
 + What else?
 
@@ -269,13 +324,10 @@ class:center,middle
 --
 
 + R is a powerful tool for cleaning, analyzing, and visualizing data
---
 
 + Integrating it into your workflow takes practice and a commitment to not giving up (Google is your friend)
---
 
 + [RStudio](https://www.rstudio.com/) makes it easy to get started
---
 
 + You should be able to [download R and RStudio on your work computer](https://ayeimanol-r.net/2014/01/16/getting-started-installation-of-rstudio-and-some-packages-using-ggplot-to-make-a-simple-plot/) (Use the zip/tarball option)
 
@@ -286,13 +338,10 @@ class:center,middle
 --
 
 + [Stat Methods](http://statmethods.net) - Great documentation for doing data analysis in R
---
 
 + [UCLA Stats](http://www.ats.ucla.edu/stat/) - Many examples of statistical analysis with comparisons between R, Stata, SPSS, etc.
---
 
 + [Stack Overflow](http://stackoverflow.com/) - One of the best Q&A sites for technical questions of all kinds
---
 
 + [R Cookbook](http://www.cookbook-r.com/) - Free online walkthrough of the basics
 
