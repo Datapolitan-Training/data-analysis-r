@@ -1,25 +1,5 @@
-# 311 DATA EXERCISE
-
 # LOAD DATASET
-#key command: read.csv()
-
 mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requests_Oct15_Nov20.csv", header=TRUE, sep=",")
-
-# EXPLORE DATA
-# key commands: nrow(), ncol(), colnames(), head(), str()
-
-nrow(mydata)
-ncol(mydata)
-colnames(mydata)
-head(mydata$Borough)
-head(mydata$Complaint.Type)
-str(mydata$Complaint.Type)
-
-# MISSING VALUES
-# key command: is.na()
-
-summary(is.na(mydata$Borough))
-summary(is.na(mydata$Complaint.Type))
 
 # TABLES
 #key commands: table(), prop.table()
