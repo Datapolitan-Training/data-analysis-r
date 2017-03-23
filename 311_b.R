@@ -1,44 +1,76 @@
 # LOAD DATASET
 mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requests_Oct15_Nov20.csv", header=TRUE, sep=",")
 
-# TABLES
-#key commands: table(), prop.table()
-#extra skills: sort(), data.frame(), subset()
+# CREATE SUBSET
 
-#make a table showing the number of complaints from ea boro
+subset <- mydata[,c(2,6,7,8,9,24,25)]
+
+# FILTER RESULTS FOR YOUR ZIP CODE
+
+zip <- subset[subset$Incident.Zip == 11216, ]
+head(zip)
+
+# FILTER RESULTS FOR YOUR COMMUNITY BOARD
+
+cd <- subset[subset$Community.Board == "08 BROOKLYN",] 
+head(cd)
+View(cd)
+
+# TABLES
+
 borocounts <- table(mydata$Borough)
 borocounts
 
-#make a table showing the percentage of complaints from ea boro
+# SEE PERCENTAGES
 prop.table(borocounts)
 
-#make a table showing the number of complaints by type
-complaints <- table(mydata$Complaint.Type)
+# ADD A COLUMN
+complaints <- table(mydata$Complaint.Type, mydata$Borough)
 complaints
 
-#sort that table to show the most frequent complaint types
-sort(complaints)
+# MAKE A BARPLOT
 
-#make a table of just the top five complaints
-complaintsdf <- data.frame(complaints)
-topfive <- subset(complaintsdf, Freq > 8500)
-topfive
+barplot(borocounts)
+barplot(complaints)
 
-#make a table to show the top complaints in one boro
+#LET'S ADD SOME PACKAGES!
 
-bronx <- subset(mydata, Borough == 'BRONX')
-bxcomplaints <- table(bronx$Complaint.Type)
-sort(bxcomplaints)
+require(dplyr)
+require(lubridate)
+require(ggplot2)
 
-bxdf <- data.frame(bxcomplaints)
-bxtopfive <- subset(bxdf, Freq > 2000)
-bxtopfive
+#DPLYR MAKES IT EASIER TO FILTER DATA
 
-# PLOTS
-#key command: barplot()
-#key parameters: main, ylab, xlab
+#Look at a subset of complaints in a particular borough, sorted by community board
 
-barplot(borocounts, main="Complaints by Borough", ylab="Number of Complaints")
+tbldata <- tbl_df(mydata) 
+seven <- select(tbldata, Created.Date, Complaint.Type, Descriptor, Location.Type, Incident.Zip, Community.Board, Borough)
+boropkg <- filter(subset, Borough == "BROOKLYN", Complaint.Type == "Derelict Vehicles")
+cbpkg <- arrange(boropkg, Community.Board)
+View(cbpkg)
 
-#Data Analytics with R by Richard Dunks and Julia Marden is licensed under a
-#Creative Commons Attribution-ShareAlike 4.0 International License.
+#LUBRIDATE MAKES IT EASIER TO WORK WITH TIME DATA
+
+date <- mdy_hms(as.character(cbpkg$Created.Date))
+hour <- hour(date)
+
+# NOW USE DPLYR TO ADD THIS COLUMN
+cbpkg <- mutate(cbpkg, hour = hour)
+View(cbpkg)
+
+#GGPLOT2 OFFERS MORE DATA VIZ POSSIBILITIES
+
+ggplot(data=cbpkg, aes(x=hour)) +
+  geom_bar(stat="bin")
+
+#LEARN MORE ABOUT ANY OF THESE PACKAGES (CLICK "HTML" LINK)
+
+browseVignettes(package = "dplyr")
+browseVignettes(package = "lubridate")
+browseVignettes(package = "ggplot2")
+
+
+?lubridate 
+       
+
+

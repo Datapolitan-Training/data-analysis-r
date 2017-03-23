@@ -7,10 +7,11 @@ mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requ
 
 #Explore dataset
 
-nrow(mydata)
-ncol(mydata)
+dim(mydata)
 colnames(mydata)
 head(mydata)
+head(mydata[,c(2,6,7,8,9,24,25)])
+summary(mydata)
 
 #Understand data structure
 #Identify the class of Borough, Complaint.Type, Incident Zip, and Created.Date
@@ -26,10 +27,9 @@ max(mydata$INSERTCOLUMNNAME)
 mean(mydata$INSERTCOLUMNNAME)
 median(mydata$INSERTCOLUMNNAME)
 summary(mydata$INSERTCOLUMNNAME)
+table(mydata$INSERTCOLUMNNAME)
 
 #What happens when you calculate these statistics? Why do you think that is?
-
-
 
 #Visualize data
 
