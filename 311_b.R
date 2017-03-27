@@ -46,6 +46,10 @@ require(ggplot2)
 tbldata <- tbl_df(mydata) 
 seven <- select(tbldata, Created.Date, Complaint.Type, Descriptor, Location.Type, Incident.Zip, Community.Board, Borough)
 boropkg <- filter(subset, Borough == "BROOKLYN", Complaint.Type == "Derelict Vehicles")
+
+# Create a filter for another borough. You can get the levels for the Factor Borough
+# by typing levels(mydata$Borough)
+
 cbpkg <- arrange(boropkg, Community.Board)
 View(cbpkg)
 
@@ -60,8 +64,7 @@ View(cbpkg)
 
 #GGPLOT2 OFFERS MORE DATA VIZ POSSIBILITIES
 
-ggplot(data=cbpkg, aes(x=hour)) +
-  geom_bar(stat="bin")
+ggplot(data=cbpkg, aes(x=hour)) + geom_bar(stat="bin")
 
 #LEARN MORE ABOUT ANY OF THESE PACKAGES (CLICK "HTML" LINK)
 
@@ -69,8 +72,9 @@ browseVignettes(package = "dplyr")
 browseVignettes(package = "lubridate")
 browseVignettes(package = "ggplot2")
 
-
-?lubridate 
+?dplyr
+?lubridate
+?ggplot2 
        
 
 

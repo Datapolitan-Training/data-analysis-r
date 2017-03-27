@@ -1,8 +1,12 @@
 #Faithful Exercise
+# Goal = add stuff here
+# Directions: Run through line by line. 
+# Use ? if you get lost, ask a neighbor, or raise your hand
 
 #Open dataset
 
 View(faithful)
+?faithful 
 
 #Explore dataset
 
