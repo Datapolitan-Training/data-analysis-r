@@ -1,5 +1,5 @@
 #Faithful Exercise
-# Goal = add stuff here
+# Goal: Explore R Studio and basic commands in R
 # Directions: Run through line by line. 
 # Use ? if you get lost, ask a neighbor, or raise your hand
 

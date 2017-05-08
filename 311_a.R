@@ -1,4 +1,7 @@
 # 311 DATA EXERCISE
+# Goal: Explore the 311 dataset using basic R commands. 
+# Directions: Run through the code line by line. Replace INSERTCOLUMNNAME as needed.
+# Use ? if you get lost, ask a neighbor, or raise your hand
 
 # LOAD DATASET
 #key command: read.csv()

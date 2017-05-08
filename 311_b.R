@@ -1,3 +1,8 @@
+# 311 DATA EXERCISE PT 2
+# Goal: Explore the 311 dataset using basic R commands. 
+# Directions: Run through the code line by line. Replace FILLER TEXT as needed.
+# Use ? if you get lost, ask a neighbor, or raise your hand
+
 # LOAD DATASET
 mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requests_Oct15_Nov20.csv", header=TRUE, sep=",")
 
@@ -12,7 +17,7 @@ head(zip)
 
 # FILTER RESULTS FOR YOUR COMMUNITY BOARD
 
-cd <- subset[subset$Community.Board == "08 BROOKLYN",] 
+cd <- subset[subset$Community.Board == "INSERT YOUR COMMUNITY DISTRICT",] 
 head(cd)
 View(cd)
 
