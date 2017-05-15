@@ -32,7 +32,7 @@ class:center, middle
 + Agency and Office
 + Previous Programming Experience
 
-# Fill out Participant Form
+# Fill out Participant Information Form
 
 ---
 
@@ -88,10 +88,15 @@ name:housekeeping
 
 + Used for data analysis
 
+???
+
++ Familiarize students with basics of R and set context
++ "Created for and by the people" - Julia Marden
 
 ---
 
 # What is Analysis?
+--
 
 >“Analysis is simply the pursuit of understanding, usually through detailed inspection or comparison”
 
@@ -99,6 +104,7 @@ name:housekeeping
 
 ???
 + Orient students to key concept in analysis
++ Use R to uncover meaning in data
 
 ---
 
@@ -107,6 +113,7 @@ name:housekeeping
 
 ???
 + Establish frame for the analytics process to be followed in class
++ Familiarize students with terminology (esp "data wrangling/data cleaning")
 
 ---
 
@@ -116,7 +123,7 @@ name:housekeeping
 + What question are we trying to answer?
 --
 
-+ Today we're going to give you a specific question to look at (derelict vehicles in Brooklyn Community District 8)
++ Today we're going to give you a specific question to look at (derelict vehicles in one Community District in Brooklyn)
 --
 
 + Think about how you might use this to answer your own questions
@@ -132,16 +139,20 @@ name:housekeeping
 # Data Collection
 --
 
-+ There are some datasets already loaded in R for testing and training
++ "It all starts with the data"
 --
 
-+ This is how we're going to start working with R
++ Can come from various sources (spreadsheets, databases, data warehouses)
 --
 
-+ You can also download your own data into R
++ There are some datasets already loaded in R for testing and training<br>
+--
+_This is how we're going to start working with R_
 --
 
-+ We'll be doing this after our first exercise
++ You can also download your own data into R<br>
+--
+_We'll be doing this after our first exercise_
 
 ???
 + Students will understand how to get data into R
@@ -155,7 +166,7 @@ name:housekeeping
 ### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
 
 ???
-+ Introduce students to Console, Environment
++ Introduce students to Console, Environment, and Help
 + Students will be familiar with the key features of the console for the exercises to come
 + This will be done by live demo and verbal discussion
 
@@ -178,7 +189,8 @@ summary(faithful)
 + They will inspect the data in the viewer and confirm it loaded properly.
 + This will be done by live demo of code
 + Students will be writing code themselves
-+ Demo will be accomplished
++ Introduce basic commands and tab completion
++ Emphasize cooperation between participants
 
 ---
 
@@ -232,6 +244,8 @@ command(dataset)
 View(faithful)
 
 ```
+--
+
 ```R
 # select a column
 
@@ -239,6 +253,8 @@ command(dataset$column)
 mean(faithful$waiting)
 
 ```
+--
+
 ```R
 # get help
 
@@ -283,7 +299,7 @@ exclude:true
 + Plot the data
 
 ???
-Instructions for the self-paced section with data
++ Instructions for the self-paced section with data
 
 ---
 
