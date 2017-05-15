@@ -1,5 +1,5 @@
 # 311 DATA EXERCISE PT 2
-# Goal: Explore the 311 dataset using basic R commands. 
+# Goal: Use R packages to create a subset of data and analyze it. 
 # Directions: Run through the code line by line. Replace FILLER TEXT as needed.
 # Use ? if you get lost, ask a neighbor, or raise your hand
 
