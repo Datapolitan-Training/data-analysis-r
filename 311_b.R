@@ -44,6 +44,10 @@ require(dplyr)
 require(lubridate)
 require(ggplot2)
 
+#TO INSTALL A NEW PACKAGE
+
+install.packages("dplyr")
+
 #DPLYR MAKES IT EASIER TO FILTER DATA
 
 #Look at a subset of complaints in a particular borough, sorted by community board. Replace Borough and Complaint.Type.

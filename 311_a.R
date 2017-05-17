@@ -21,20 +21,20 @@ summary(mydata[,c(2,6,7,8,9,24,25)])
 #Identify the class of Borough, Complaint.Type, Incident Zip, and Created.Date
 
 str(mydata[,c(2,6,7,8,9,24,25)])
-class(mydata$INSERTCOLUMNNAME)
+class(mydata$Borough)
 class(mydata$INSERTCOLUMNNAME)
 
 #Calculate summary statistics for 1-2 of the above columns
 
-min(mydata$INSERTCOLUMNNAME)
+min(mydata$Borough)
 max(mydata$INSERTCOLUMNNAME)
 mean(mydata$INSERTCOLUMNNAME)
 median(mydata$INSERTCOLUMNNAME)
 
 #What happens when you calculate these statistics? Why do you think that is?
 
-summary(mydata$INSERTCOLUMNNAME)
-table(mydata$Complaint.Type)
+summary(mydata$Borough)
+table(mydata$Borough)
 
 # What's the difference between summary & table? What are these results showing?  
 # Pivot tables 
