@@ -64,7 +64,7 @@ View(cbpkg)
 
 #LUBRIDATE MAKES IT EASIER TO WORK WITH TIME DATA
 
-date <- mdy_hm(as.character(cbpkg$Created.Date))
+date <- mdy_hms(as.character(cbpkg$Created.Date))
 hour <- hour(date)
 
 # NOW USE DPLYR TO ADD THIS COLUMN
@@ -74,6 +74,10 @@ View(cbpkg)
 #GGPLOT2 OFFERS MORE DATA VIZ POSSIBILITIES
 
 ggplot(data=cbpkg, aes(x=hour)) + geom_bar(stat="count")
+
+# OR (IF YOU GET A WINDOWS ERROR)
+
+ggplot2::ggplot(data=cbpkg, ggplot2::aes(x=hour))+ ggplot2::geom_bar(stat="count")
 
 #ADD A TITLE AND LEGEND
 
