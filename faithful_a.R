@@ -8,6 +8,10 @@
 View(faithful)
 ?faithful 
 
+#Syntax Error!
+
+view(faithful)
+
 #Explore dataset
 
 nrow(faithful)
