@@ -48,5 +48,7 @@ hist(mydata$Incident.Zip)
 
 hist(table(mydata$Borough))
 
-# Is this right?  Almost... 
+# Is this right?  Not quite...
+# When we work with factor data we need the barplot() command instead of the hist() command
 
+barplot(table(mydata$Borough))
