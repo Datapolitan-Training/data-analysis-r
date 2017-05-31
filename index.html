@@ -798,6 +798,70 @@ barplot()
 # make a chart with factor data
 ```
 
+---
+
+#dplyr
+
+```R
+install.packages("dplyr")
+require(dplyr)
+```
+```R
+tbl_df()
+#create a dataframe
+```
+```R
+filter()
+select()
+# create a subset; filter for rows, select for columns
+```
+```R
+mutate()
+# add a column
+```
+```R
+arrange()
+# sort rows by category
+```
+
+---
+
+#lubridate
+
+```R
+install.packages("lubridate")
+require(lubridate)
+```
+```R
+mdy_hms()
+#format timestamp into month, day, year, hour, min and second
+# other commands: mdy_hm, mdy, dmy, etc.
+```
+```R
+hour()
+# extract hour from timestamp
+# other commands: day, minute, second, etc.
+```
+---
+
+#ggplot2
+
+```R
+ggplot()
+#plot a dataframe
+```
+```R
+geom_bar()
+# make a proportional bar chart
+# alternative is geom_col()
+# used for factor data 
+```
+```R
+ggtitle()
+# add a title to a plot
+```
+---
+
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
