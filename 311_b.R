@@ -54,7 +54,7 @@ install.packages("dplyr")
 
 tbldata <- tbl_df(mydata) 
 seven <- select(tbldata, Created.Date, Complaint.Type, Descriptor, Location.Type, Incident.Zip, Community.Board, Borough)
-boropkg <- filter(subset, Borough == "BROOKLYN", Complaint.Type == "Derelict Vehicles")
+boropkg <- filter(seven, Borough == "BROOKLYN", Complaint.Type == "Derelict Vehicles")
 
 # Create a filter for another borough. You can get the levels for the Factor Borough
 # by typing levels(mydata$Borough)
