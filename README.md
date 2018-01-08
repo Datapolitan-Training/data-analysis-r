@@ -14,17 +14,22 @@
 + Analysts working in city government with basic programming knowledge and/or experience performing advanced analysis in Excel (nested formulas with conditionals, PivotTables, and macros)
 
 # Outline
-+ Introduction
++ Introduction (Richard)
   + Class Schedule and Expectations
   + What is R?
+  + R vs Excel
+  + Getting Started
   + Overview of Data Analysis
-+ Today's Question
+  + NOLA Example
++ Today's Question (Julia)
   + Understanding Noise Complaints in 311 Data
   + See Finished Example
-+ Data Collection
-  + Open 311 Dataset in R Studio
++ Data Collection (Julia)
+  + Open Old Faithful Dataset in R Studio
++ Working with R (Richard)
   + Explore Data Structures and Types
   + Learn Basic Syntax
++ Morning Break (15 mins)
 + Data Exploration
   + Calculate Summary Statistics
   + Identify Columns, Levels, and Known Issues
