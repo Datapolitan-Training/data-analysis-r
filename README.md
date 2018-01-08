@@ -26,28 +26,25 @@
   + See Finished Example
 + Data Collection (Julia)
   + Open Old Faithful Dataset in R Studio
++ Data Exploration (Julia)
+  + Calculate Summary Statistics
+  + Identify Columns, Levels, and Known Issues
+  + Explore R Studio Console
 + Working with R (Richard)
   + Explore Data Structures and Types
   + Learn Basic Syntax
 + Morning Break (15 mins)
-+ Data Exploration
-  + Calculate Summary Statistics
-  + Identify Columns, Levels, and Known Issues
-  + Explore R Studio Console
-+ Data Manipulation
-  + Introduction to R Packages
-  + Learn to Create New Fields and Calculate New Values
-  + Explore Algorithmic Ways to Tackle Problems in R  
-+ Form Hypotheses
-  + What Questions Can We Ask of This Data?
-  + How Could We Structure Our Data Analysis?
-+ Debugging
++ Exercise 311 Data (Julia)
++ Lunch (1 hour)
++ Working with Data (Richard)
+  + Data Wrangling
+  + Packages 
+  + Algorithms
+  + Form Hypotheses
++ Data Manipulation Practical (Julia)
++ Debugging (Richard)
   + Understand Difference Between Syntax and Semantic Errors
   + Review Pro-tips for Problem-solving and Debugging
-+ Data Visualization
-  + Create a Table That Answers an Above Question
-  + Create a Plot That Answers an Above Question
-+ Wrap Up
-  + How is R Different Than Excel?
-  + Examples of R in Government Work
-+ Resources
++ Code Review (Richard/Julia)
++ Wrap Up (Julia)
++ Resources (Julia)
