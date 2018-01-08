@@ -2,3 +2,4 @@
 *.pptx
 *.pages
 .Rhistory
+*.sublime*
