@@ -11,7 +11,7 @@ A full-day course covering the key concepts of how to leverage the R programming
 + Participants will model how R can be used to build a data driven culture in their workplace
 
 # Key Audience
-+ Analysts working in city government with basic programming knowledge and/or experience performing advanced analysis in Excel (nested formulas with conditionals, PivotTables, and macros)
+Analysts working in city government with basic programming knowledge and/or experience performing advanced analysis in Excel (nested formulas with conditionals, PivotTables, and macros)
 
 # Outline
 + Introduction (Richard)
