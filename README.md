@@ -1,5 +1,5 @@
 # Summary
-+ A full-day course covering the key concepts of how to leverage the R programming language for data analysis using open data. The course will cover the basic syntax of R as it relates to performing basic exploratory data analysis, as well as how to create impactful charts, graphs, and other information visualizations using NYC Open Data for operational decision making.
+A full-day course covering the key concepts of how to leverage the R programming language for data analysis using open data. The course will cover the basic syntax of R as it relates to performing basic exploratory data analysis, as well as how to create impactful charts, graphs, and other information visualizations using NYC Open Data for operational decision making.
 
 # Terminal Learning Objectives
 + Participants will understand what R is and why it's useful
