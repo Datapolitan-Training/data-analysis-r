@@ -303,15 +303,23 @@ exclude:true
 
 # Exercise: Old Faithful
 
-```
-View(faithful)
-```
-![img-center-70](images/faithfulvis.png)
-<!-- Add code snippets for str and summary -->
-```
-str(faithful)
-summary(faithful)
-```
+
+![img-center-70](images/old_faithful.jpeg)
+.caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
+
+
+???
++ Facilitator provides context for the exercise by describing Old Faithful
++ Students will download script with prepared code snippets to run
++ Students will learn the steps of running summary statistics in R
+
+---
+
+# Exercise: Old Faithful
+
+![img-center-85](images/faithfulvis.png)
+
+#### [Click to download the `faithful_a.R` code for this exercise (already loaded in RStudio)](code/faithful_a.R)
 
 ???
 + Students will open and load a simple dataset.
@@ -321,47 +329,6 @@ summary(faithful)
 + Introduce basic commands and tab completion
 + Describe comments and their purpose
 + Emphasize cooperation between participants
-
----
-
-# R Data Types
-
-+ [Numeric](http://www.r-tutor.com/r-introduction/basic-data-types/numeric) vs [Factor](https://www.stat.berkeley.edu/classes/s133/factors.html)
---
-
-![img-center-80](images/ice_cream.jpeg)
-
-
-
-???
-+ Students will understand a few of the different data types in R
-+ They will use the `str` and `summary` command
-+ This will be done with a live demo of code
-
----
-
-# R Data Structures
---
-
-+ [Vectors](http://www.r-tutor.com/r-introduction/vector) and [matrices](http://www.r-tutor.com/r-introduction/matrix) (single data types)
---
-
-+ [Lists](http://www.r-tutor.com/r-introduction/list) and [data frames](http://www.r-tutor.com/r-introduction/data-frame) (mixed data types)
---
-
-
-![img-center-100](images/dataframe.png)
-
---
-
-+ You often need to restructure your data to make it usable
-
-
-???
-+ Students will review work done in simple data load
-+ They will learn key elements of data structures based on Faithful data
-+ This will be done with live demo and discussion
-+ They will use the `str` and `summary` command
 
 ---
 
@@ -410,33 +377,34 @@ mean(faithful$waiting)
 
 ---
 
+# Exercise: 311 Service Requests
+--
+
++ Open the `311_a.R` script
+--
+
++ Follow the code to load the dataset
+--
+
++ Identify data structure for the whole dataset and data types for 3 columns
+
+???
++ Students will conduct the same commands from Faithful with 311 exercise
++ Students will hit the roadblocks
++ Can't run summary statistics
++ Exercise will be run through script showing comments (not on slide)
++ Script will mirror the Faithful with intention of not working
+
+---
+
+exclude:true
 class:center,middle
 # Data Exploration
 
-???
-+ This is the start of exercise 2 in summarizing available data
-
----
-
-# Exercise: Summary Statistics
-
 ## > [Download Exercise](code/faithful_a.R)
 
-![img-center-70](images/old_faithful.jpeg)
-.caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
-
 ???
-+ Students will download script with prepared code snippets to run
-+ Students will learn the steps of running summary statistics in R
-
-
----
-
-class:center, middle
-# 15 Min Break
-![img-center-100](https://imgs.xkcd.com/comics/real_programmers.png)
-Source: https://xkcd.com/378/
-
++ This is the start of exercise 2 in summarizing available data
 
 ---
 
@@ -553,46 +521,67 @@ mydata[order(mydata$Created.Date),]
 
 class: center,middle
 
-# We'll be covering each of these tasks today as we go through
+# We'll be covering each of these tasks today as we go through the exercises
 
 ---
 
-# Exercise: 311 Data
+class:center, middle
+# 15 Min Break
+![img-center-100](https://imgs.xkcd.com/comics/real_programmers.png)
+Source: https://xkcd.com/378/
 
-<!-- Repeat skills with 311 dataset-->
+---
 
-## > [Download Exercise](code/311_a.R)
+# R Data Types
 
-+ Open dataset
-+ Identify data structure for the whole dataset and data types for 3 columns
++ [Numeric](http://www.r-tutor.com/r-introduction/basic-data-types/numeric) vs [Factor](https://www.stat.berkeley.edu/classes/s133/factors.html)
+--
+
+![img-center-80](images/ice_cream.jpeg)
+
+
 
 ???
-+ Students will conduct the same commands from Faithful with 311 exercise
-+ Students will hit the roadblocks
-+ Can't run summary statistics
-+ Exercise will be run through script showing comments (not on slide)
-+ Script will mirror the Faithful with intention of not working
++ Students will understand a few of the different data types in R
++ They will use the `str` and `summary` command
++ This will be done with a live demo of code
 
 ---
 
+# R Data Structures
+--
 
-class:center, middle
-# Lunch
-![img-center-60](https://imgs.xkcd.com/comics/automation.png)
-Source: https://xkcd.com/1319/
++ [Vectors](http://www.r-tutor.com/r-introduction/vector) and [matrices](http://www.r-tutor.com/r-introduction/matrix) (single data types)
+--
+
++ [Lists](http://www.r-tutor.com/r-introduction/list) and [data frames](http://www.r-tutor.com/r-introduction/data-frame) (mixed data types)
+--
+
+
+![img-center-100](images/dataframe.png)
+
+--
+
++ You often need to restructure your data to make it usable
+
+
+???
++ Students will review work done in simple data load
++ They will learn key elements of data structures based on Faithful data
++ This will be done with live demo and discussion
++ They will use the `str` and `summary` command
 
 ---
 
-class:center, middle
-# Welcome Back!
-
----
-
-# Data Wrangling
-## i.e cleaning
+# Data Wrangling (i.e. Cleaning)
+--
 
 + Get data into right type or structure
+--
+
 + Create subsets
+--
+
 + Add packages to work with the data we have
 
 ???
@@ -640,6 +629,47 @@ exclude: true
 
 ???
 + repeat from above
+
+---
+
+# 311 Exercise
+
+![img-center-80](images/datavis-r.png)
+
+#### [Click to download the `311_b.R` code for this exercise (already loaded in RStudio)](code/311_b.R)
+
+???
++ An example question of the 311 dataset
++ students will be walked through the exercise with a script
++ Prompts in the script with a more specific question
++ incidents per borough -> distribution of complaints
+
+
+---
+
+# 311: Your View
+--
+
++ Switch out derelict vehicles for another complaint type
+--
+
++ Look at a different borough, ZIP, or community board
+--
+
++ Look at day of the week instead of hour
+
+---
+
+
+class:center, middle
+# Lunch
+![img-center-60](https://imgs.xkcd.com/comics/automation.png)
+Source: https://xkcd.com/1319/
+
+---
+
+class:center, middle
+# Welcome Back!
 
 ---
 
@@ -718,34 +748,6 @@ class:center,middle
 + Prompts for starting your investigation of the data
 + Students will have a way to start exploring data
 + Discussion leading into guided exercise
-
----
-
-# 311 Exercise
-
-## > [Download Exercise](code/311_b.R)
-
-![img-center-70](images/datavis-r.png)
-
-???
-+ An example question of the 311 dataset
-+ students will be walked through the exercise with a script
-+ Prompts in the script with a more specific question
-+ incidents per borough -> distribution of complaints
-
-
----
-
-# 311: Your View
---
-
-+ Switch out derelict vehicles for another complaint type
---
-
-+ Look at a different borough, zip, or community board
---
-
-+ Look at day of the week instead of hour
 
 ---
 
