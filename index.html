@@ -470,6 +470,114 @@ exclude:true
 
 ---
 
+# 5 Data Analytics Tasks
+--
+
+1. Sorting
+--
+
+2. Filtering
+--
+
+3. Aggregating (PivotTable)
+--
+
+4. Manipulating
+--
+
+5. Visualizing
+
+---
+
+# 1. Sorting
+--
+
++ Reorganize rows in a dataset based on the values in a column
+--
+
++ Can sort on multiple columns
+
+---
+
+# Sorting in R
+--
+
++ Use [`order()`](https://www.r-bloggers.com/r-sorting-a-data-frame-by-the-contents-of-a-column/)
+--
+
++ Specify the column you want to sort by (`Created.Date`)
+--
+
+
+```r
+mydata[order(mydata$Created.Date),]
+```
+
+--
+
++ Find the earliest date in our data
+--
+
++ Find the latest date in our data
+
+---
+
+# 2. Filtering
+--
+
++ Only show rows that contain some value
+--
+
++ Can filter by multiple values
+--
+
++ Can filter by values in multiple columns
+
+---
+
+# 3. Aggregating Data 
+--
+
++ Trends only become clear in aggregate
+--
+
++ Often where you discover the "so what"
+--
+
++ Aggregating data meaningfully can be tricky
+
+---
+
+# 4. Manipulating Data (In a good way...)
+--
+
++ Sometimes available categories don't make sense
+--
+
++ Values may not be in the format you need (or have mistakes)
+--
+
++ You always want to have a clean copy of the data to go back to
+--
+
++ Best to keep track of what you've done
+
+
+---
+
+# 5. Visualizing Data
+--
+
++ Quickly communicate information
+--
+
++ Tell a clearer story
+--
+
++ A picture is worth a thousands words
+
+---
+
 
 class:center, middle
 # Lunch
