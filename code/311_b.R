@@ -65,10 +65,10 @@ View(cbpkg)
 #LUBRIDATE MAKES IT EASIER TO WORK WITH TIME DATA
 
 date <- mdy_hms(as.character(cbpkg$Created.Date))
-hour <- hour(date)
+hr <- hour(date)
 
 # NOW USE DPLYR TO ADD THIS COLUMN
-cbpkg <- mutate(cbpkg, hour = hour)
+cbpkg <- mutate(cbpkg, hour = hr)
 View(cbpkg)
 
 #GGPLOT2 OFFERS MORE DATA VIZ POSSIBILITIES
