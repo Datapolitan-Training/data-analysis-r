@@ -8,22 +8,22 @@ mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requ
 
 # CREATE SUBSET
 
-subset <- mydata[,c(2,6,7,8,9,24,25)]
+md_small <- mydata[,c(2,6,7,8,9,24,25)]
 
 # FILTER RESULTS FOR YOUR ZIP CODE. REPLACE 11216.
 
-zip <- subset[subset$Incident.Zip == 11216, ]
+zip <- md_small[md_small$Incident.Zip == 11216, ]
 head(zip)
 
 # FILTER RESULTS FOR YOUR COMMUNITY BOARD. REPLACE "08 BROOKLYN"
 
-cd <- subset[subset$Community.Board == "08 BROOKLYN",] 
+cd <- md_small[md_small$Community.Board == "08 BROOKLYN",] 
 head(cd)
 View(cd)
 
 # TABLES
 
-borocounts <- table(subset$Borough)
+borocounts <- table(md_small$Borough)
 borocounts
 
 # SEE PERCENTAGES
