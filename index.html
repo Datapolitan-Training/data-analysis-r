@@ -164,26 +164,6 @@ name:housekeeping
 
 ---
 
-# Getting Started
---
-
-+ R is a powerful tool for cleaning, analyzing, and visualizing data
---
-
-+ Integrating it into your workflow takes practice and a commitment to not giving up (Google is your friend)
---
-
-+ [RStudio](https://www.rstudio.com/) makes it easy to get started
---
-
-+ You should be able to [download R and RStudio on your work computer](https://ayeimanol-r.net/2014/01/16/getting-started-installation-of-rstudio-and-some-packages-using-ggplot-to-make-a-simple-plot/) (Use the zip/tarball option)
-
-???
-+ Instructors will reinforce key learning points with students
-
-
----
-
 # What is Analysis?
 --
 
@@ -438,7 +418,7 @@ Source: https://xkcd.com/378/
 3. Aggregating (PivotTable)
 --
 
-4. Manipulating
+4. Transforming
 --
 
 5. Visualizing
@@ -455,17 +435,23 @@ Source: https://xkcd.com/378/
 
 ---
 
-exclude:true
 # Sorting in R
+--
+
 + Use [`order()`](https://www.r-bloggers.com/r-sorting-a-data-frame-by-the-contents-of-a-column/)
-+ Specify the column you want to sort by (`Created.Date`)
+--
+
++ Specify the column you want to sort by<br>(in our case `eruptions` or `waiting`)
+--
 
 ```r
-mydata[order(mydata$Created.Date),]
+df[order(df$column_to_sort_by),]
 ```
+--
 
-+ Find the earliest date in our data
-+ Find the latest date in our data
+## Your Turn
++ Sort the Old Faithful data to find the shortest waiting time
++ Sort the Old Faithful data to find the longest waiting time
 
 ---
 
@@ -482,6 +468,25 @@ mydata[order(mydata$Created.Date),]
 
 ---
 
+# Filtering in R
+--
+
++ Provide some logical test (`<`, `>`, `==`, etc.)
+--
+
++ The format is
+--
+
+```r
+df[df$column_to_filter_by <logical test>,]
+```
+
+--
+## Your Turn
++ Filter the Old Faithful data for all eruptions longer than 4 minutes
+
+---
+
 # 3. Aggregating Data 
 --
 
@@ -492,10 +497,13 @@ mydata[order(mydata$Created.Date),]
 --
 
 + Aggregating data meaningfully can be tricky
+--
+
++ We'll be showing how to do this with R later
 
 ---
 
-# 4. Manipulating Data (In a good way...)
+# 4. Transforming Data
 --
 
 + Sometimes available categories don't make sense
@@ -508,7 +516,9 @@ mydata[order(mydata$Created.Date),]
 --
 
 + Best to keep track of what you've done
+--
 
++ We'll be showing how to do this with R later
 
 ---
 
@@ -522,12 +532,17 @@ mydata[order(mydata$Created.Date),]
 --
 
 + A picture is worth a thousands words
+--
 
----
++ We've already seen this with the Old Faithful data
 
-class: center,middle
+```r
+hist(faithful$waiting)
+hist(faithful$eruptions)
 
-# We'll be covering each of these tasks today as we go through the exercises
+plot(faithful, main="Eruptions of Old Faithful", xlab="Eruption Time in Minutes", ylab="Waiting Time to Next Eruption in Min")
+abline(lm(faithful$waiting~faithful$eruptions), col="red")
+```
 
 ---
 
@@ -906,6 +921,24 @@ class:center,middle
 
 ???
 + Students will review progress and give feedback on key takeaways
+
+---
+
+# Taking This Out of the Classroom
+???
++ Facilitators reinforce key learning points with participants for integrating into their workflow
+--
+
++ R is a powerful tool for cleaning, analyzing, and visualizing data
+--
+
++ Integrating it into your workflow takes practice and a commitment to not giving up (Google is your friend)
+--
+
++ [RStudio](https://www.rstudio.com/) makes it easy to get started
+--
+
++ You should be able to [download R and RStudio on your work computer](https://ayeimanol-r.net/2014/01/16/getting-started-installation-of-rstudio-and-some-packages-using-ggplot-to-make-a-simple-plot/) (Use the zip/tarball option)
 
 ---
 name:resources
