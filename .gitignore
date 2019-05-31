@@ -3,3 +3,5 @@
 *.pages
 .Rhistory
 *.sublime*
+prep/*
+data/*
