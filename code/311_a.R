@@ -6,7 +6,7 @@
 # LOAD DATASET
 #key command: read.csv()
 
-mydata <- read.csv("https://s3.amazonaws.com/datapolitan-training-files/311_Requests_Oct15_Nov20.csv", header=TRUE, sep=",")
+mydata <- read.csv("data/311_Requests_Oct15_Nov20.csv", header=TRUE, sep=",")
 
 #Explore dataset
 
