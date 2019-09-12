@@ -43,6 +43,7 @@ class:center, middle
 # Introduce Yourself to Your Neighbor
 + Who you are
 + Where you work
++ What are you hoping to learn today?
 + What you've done with code (any code)
 
 ---
@@ -172,8 +173,20 @@ name:housekeeping
 + Orient students to key concept in analysis
 + Use R to uncover meaning in data
 
+---
+# The Analytical Process
+
+![img-center-80](images/valuechain.png)
+
+--
+???
++ Establish frame for the analytics process to be followed in class
++ Familiarize students with terminology (esp "data wrangling/data cleaning")
++ Demystify the process
++ Empower students to do analysis
 
 ---
+
 name:nola
 # New Orleans Distributes Smoke Alarms
 
@@ -212,18 +225,24 @@ name:nola
 
 ---
 
-# Today's Analysis
+# Exercise: Old Faithful
 
-![img-center-90](images/derelictvan.png)
 
-.center[Derelict Vehicles Across NYC]
+![img-center-70](images/old_faithful.jpeg)
+.caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
+
+
+???
++ Facilitator provides context for the exercise by describing Old Faithful
++ Students will download script with prepared code snippets to run
++ Students will learn the steps of running summary statistics in R
 
 ---
+# The Analytical Process
 
-exclude:true
-# 6 Steps of Analysis
-![img-center-90](images/sixphases_1.jpg)
+![img-center-80](images/valuechain.png)
 
+--
 ???
 + Establish frame for the analytics process to be followed in class
 + Familiarize students with terminology (esp "data wrangling/data cleaning")
@@ -232,20 +251,14 @@ exclude:true
 
 ---
 
-# Problem Statement
+# Identify the Question
 --
 
-+ How many people complain about derelict vehicles?
++ What's the minimum amount of time I should plan to spend at Old Faithful?
 --
 
-+ Do people complain more at a particular time of day?
++ Is there a relationship between the amount of time I wait and the length of time it erupts?
 --
-
-+ Do people complain more in a particular neighborhood or borough?
---
-
-
-![img-center-55](images/datavis-r.png)
 
 ???
 + Students will understand the problem we're seeking to solve in class
@@ -254,7 +267,7 @@ exclude:true
 
 ---
 
-# Data Collection
+# Collect the Data
 --
 
 + Key Skill: load data into R
@@ -271,7 +284,7 @@ exclude:true
 
 ---
 
-# [RStudio](https://www.rstudio.com/)
+# [Run the Analyses](https://www.rstudio.com/)
 
 ![img-center-80](images/rstudio_annotated.png)
 ### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
@@ -281,20 +294,6 @@ exclude:true
 + Students will be familiar with the key features of the console for the exercises to come
 + This will be done by live demo and verbal discussion
 + Ctrl+L clear console
-
----
-
-# Exercise: Old Faithful
-
-
-![img-center-70](images/old_faithful.jpeg)
-.caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
-
-
-???
-+ Facilitator provides context for the exercise by describing Old Faithful
-+ Students will download script with prepared code snippets to run
-+ Students will learn the steps of running summary statistics in R
 
 ---
 
@@ -557,6 +556,41 @@ abline(lm(faithful$waiting~faithful$eruptions), col="red")
 3. Aggregating (PivotTable)
 4. Transforming
 5. Visualizing
+
+---
+
+# Derelict Vehicles
+
+![img-center-90](images/derelictvan.png)
+
+.center[Derelict Vehicles Across NYC]
+
+---
+# The Analytical Process
+
+![img-center-80](images/valuechain.png)
+
+---
+
+# Identify the Question
+--
+
++ How many people complain about derelict vehicles?
+--
+
++ Do people complain more at a particular time of day?
+--
+
++ Do people complain more in a particular neighborhood or borough?
+--
+
+
+![img-center-55](images/datavis-r.png)
+
+???
++ Students will understand the problem we're seeking to solve in class
++ Students will learn by example the value of problem setting.
++ This will be done by writing out explicit problem statement for 311 Noise, possibly vision 0 db after we have exercise.
 
 ---
 
@@ -1034,15 +1068,26 @@ name:resources
     </li>
 </ul>
 
-### Mark Yarish
+<!-- ### Mark Yarish
 <ul>
     <li style="font-size:34px">
         Email: mark[at]datapolitan[dot]com
     </li>
+</ul> —>
+
+
+### Elizabeth DiLuzio
+<ul>
+  <li style="font-size:34px">
+        Email: elizabeth[at]datapolitan[dot]com
+    </li>
+  <li style="font-size:34px">
+        Twitter: <a href="https://twitter.com/lizdiluzio">@lizdiluzio</a>
+    </li>
 </ul>
 
 
-### Richard Dunks
+<!-- ### Richard Dunks
 <ul>
     <li style="font-size:34px">
         Email: training[at]datapolitan[dot]com
