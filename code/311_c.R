@@ -10,7 +10,8 @@ library(dplyr)
 tbldata <- tbl_df(mydata) 
 
 # deal with not finding the code 
-https://www.tidyverse.org/articles/2018/06/conflicted/
+# https://www.tidyverse.org/articles/2018/06/conflicted/
+tbldata <- dplyr::as_tibble(mydata) # new version of dplyr
 
 # Select only 7 columns from tbldata
 tbl_small <- select(tbldata, Created.Date, Complaint.Type, Descriptor, Location.Type, Incident.Zip, Community.Board, Borough)
