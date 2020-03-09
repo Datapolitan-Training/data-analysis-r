@@ -143,52 +143,6 @@ name:housekeeping
 
 ---
 
-![img-right-40](images/r_logo.png)
-# What is R?
---
-
-+ Statistical programming language
---
-
-+ [Open-source](https://opensource.com/resources/what-open-source)
---
-
-+ Made for and by people who work with data
---
-
-+ Used for data analysis
---
-
-+ For the history of R, [see this video](https://www.coursera.org/lecture/r-programming/overview-and-history-of-r-pAbaE)
-
-???
-
-+ Familiarize students with basics of R and set context
-+ "Created for and by the people" - Julia Marden
-
----
-
-# R vs. Excel
-???
-+ Facilitator compares R directly to Excel for context (assuming most participants are well-acquainted with Excel)
---
-
-+ R is a _programming language_ while Excel is an _application_ 
---
-
-+ R can work with much larger datasets than Excel
---
-
-+ R can perform more complex operations than Excel
---
-
-+ R commands can be easily saved, re-run, and automated
---
-
-+ R doesn't have the icons, animations, and wizards of Excel
-
----
-
 # What is Analysis?
 --
 
@@ -213,44 +167,6 @@ name:housekeeping
 
 ---
 
-name:nola
-# New Orleans Distributes Smoke Alarms
-
-![img-center-40](images/neworleansfire.jpeg)
-.caption[Image Credit: Michael Barnett [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons]
-
-???
-+ Students will be inspired to use their knowledge in practical applications
-
----
-
-# Targeted Outreach Saves Lives
-
-![img-center-90](images/nolasmokealarm.png)
-.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
-
-???
-+ Students will be inspired to use their knowledge in practical applications
-
-
----
-
-# Targeted Outreach Saves Lives
-
-![img-center-90](images/nolaimpact.png)
-.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
-
-???
-+ Students will be inspired to use their knowledge in practical applications
-
----
-
-# And Here's the R Code for It
-[![img-center-85](images/smoke_signals_github_outline.png)](https://github.com/enigma-io/smoke-signals-model)
-[Click here for the code](https://github.com/enigma-io/smoke-signals-model)
-
----
-
 # Exercise: Old Faithful
 
 
@@ -262,18 +178,6 @@ name:nola
 + Facilitator provides context for the exercise by describing Old Faithful
 + Students will download script with prepared code snippets to run
 + Students will learn the steps of running summary statistics in R
-
----
-# The Analytical Process
-
-![img-center-80](images/valuechain.png)
-
---
-???
-+ Establish frame for the analytics process to be followed in class
-+ Familiarize students with terminology (esp "data wrangling/data cleaning")
-+ Demystify the process
-+ Empower students to do analysis
 
 ---
 
@@ -293,36 +197,6 @@ name:nola
 
 ---
 
-# Collect the Data
---
-
-+ Key Skill: load data into R
---
-
-+ File types: CSV, Excel, SQL database, API, etc.
---
-
-+ R datasets package
-
-???
-+ Students will understand how to get data into R
-+ This will be done by bullet points about the process
-
----
-
-# [Run the Analysis](https://www.rstudio.com/)
-
-![img-center-80](images/rstudio_annotated.png)
-### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
-
-???
-+ Introduce students to Console, Environment, and Help
-+ Students will be familiar with the key features of the console for the exercises to come
-+ This will be done by live demo and verbal discussion
-+ Ctrl+L clear console
-
----
-
 # Exercise: Old Faithful
 
 ![img-center-85](images/faithfulvis.png)
@@ -337,6 +211,19 @@ name:nola
 + Introduce basic commands and tab completion
 + Describe comments and their purpose
 + Emphasize cooperation between participants
+
+---
+
+# [RStudio Introduction](https://www.rstudio.com/)
+
+![img-center-80](images/rstudio_annotated.png)
+### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
+
+???
++ Introduce students to Console, Environment, and Help
++ Students will be familiar with the key features of the console for the exercises to come
++ This will be done by live demo and verbal discussion
++ Ctrl+L clear console
 
 ---
 
@@ -385,26 +272,99 @@ mean(faithful$waiting)
 
 ---
 
-exclude:true
-class:center,middle
-# Data Exploration
+![img-right-40](images/r_logo.png)
+# What is R?
+--
 
-## > [Download Exercise](code/faithful_a.R)
++ Statistical programming language
+--
+
++ [Open-source](https://opensource.com/resources/what-open-source)
+--
+
++ Made for and by people who work with data
+--
+
++ Used for data analysis
+--
+
++ For the history of R, [see this video](https://www.coursera.org/lecture/r-programming/overview-and-history-of-r-pAbaE)
 
 ???
-+ This is the start of exercise 2 in summarizing available data
+
++ Familiarize students with basics of R and set context
++ "Created for and by the people" - Julia Marden
 
 ---
 
-exclude:true
-# Do This
-+ Open the dataset
-+ Understand the data structure
-+ Calculate summary statistics
-+ Plot the data
+# R vs. Excel
+???
++ Facilitator compares R directly to Excel for context (assuming most participants are well-acquainted with Excel)
+--
+
++ R is a _programming language_ while Excel is an _application_ 
+--
+
++ R can work with much larger datasets than Excel
+--
+
++ R can perform more complex operations than Excel
+--
+
++ R commands can be easily saved, re-run, and automated
+--
+
++ R doesn't have the icons, animations, and wizards of Excel
+
+---
+
+name:nola
+# New Orleans Distributes Smoke Alarms
+
+![img-center-40](images/neworleansfire.jpeg)
+.caption[Image Credit: Michael Barnett [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons]
 
 ???
-+ Instructions for the self-paced section with data
++ Students will be inspired to use their knowledge in practical applications
+
+---
+
+# Targeted Outreach Saves Lives
+
+![img-center-90](images/nolasmokealarm.png)
+.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
+???
++ Students will be inspired to use their knowledge in practical applications
+
+
+---
+
+# Targeted Outreach Saves Lives
+
+![img-center-90](images/nolaimpact.png)
+.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
+???
++ Students will be inspired to use their knowledge in practical applications
+
+---
+
+# And Here's the R Code for It
+[![img-center-85](images/smoke_signals_github_outline.png)](https://github.com/enigma-io/smoke-signals-model)
+[Click here for the code](https://github.com/enigma-io/smoke-signals-model)
+
+---
+# The Analytical Process
+
+![img-center-80](images/valuechain.png)
+
+--
+???
++ Establish frame for the analytics process to be followed in class
++ Familiarize students with terminology (esp "data wrangling/data cleaning")
++ Demystify the process
++ Empower students to do analysis
 
 ---
 
@@ -745,27 +705,6 @@ class:center, middle
 + This will be done with a discussion
 
 ---
-exclude: true
-# dplyr
-
-???
-+ Walk through previous example and add in packages
-+ teach dplyr by making it work with example
-
----
-exclude: true
-# ggplot2
-
-???
-+ repeat from above
----
-exclude: true
-# lubridate
-
-???
-+ repeat from above
-
----
 
 # Exercise: 311 Service Requests
 
@@ -798,47 +737,6 @@ exclude: true
 --
 
 + We'll be around to help
-
----
-exclude:true
-class:center,middle
-# Algorithms
-
----
-exclude:true
-# What is an Algorithm?
-+ Step by step instructions for any task
-+ Inputs = Ingredients
-+ Operation = Baking Instructions
-+ Output = Dessert
-+ Each step in the operation must be clearly defined and work the same with any input
-
----
-exclude:true
-# [Example](https://www.linkedin.com/pulse/way-algorithm-claudia-perlich)
-![img-center-100](images/cc_algo1.png)
-
----
-exclude:true
-.red[# Inputs]
-![img-center-100](images/cc_algo2.png)
-
----
-exclude:true
-.red[# Operation]
-![img-center-100](images/cc_algo3.png)
-
----
-exclude:true
-class:middle
-.red[# Output]
-![img-center-80](images/cake.jpg)
-
-##### Credit: Flickr user [Patent and the Pantry](https://www.flickr.com/photos/26412869@N03/). Image used under a [Creative Commons BY-NC-ND 2.0 license](https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode)
-
-???
-+ define algorithm as instructions for cake
-+ Lecture with images
 
 ---
 
@@ -897,14 +795,6 @@ class:center,middle
 --
 
 + We'll be around to help
-
----
-exclude:true
-class:center,middle
-# Data Verification
-
-???
-+ Start of new section and exercise
 
 ---
 
@@ -1094,7 +984,7 @@ name:resources
 + LinkedIn: https://www.linkedin.com/in/leealfred/
  -->
 
-### Reshama Shaikh
+<!-- ### Reshama Shaikh
 <ul>
     <li style="font-size:34px">
         LinkedIn, Github, Twitter: reshamas
@@ -1103,14 +993,7 @@ name:resources
       Blog: <a href="https://reshamas.github.io/">https://reshamas.github.io/</a>
     </li>
 </ul>
-
-<!-- ### Mark Yarish
-<ul>
-    <li style="font-size:34px">
-        Email: mark[at]datapolitan[dot]com
-    </li>
-</ul> -->
-
+ -->
 
 ### Elizabeth DiLuzio
 <ul>
@@ -1122,13 +1005,20 @@ name:resources
     </li>
 </ul>
 
+### Mark Yarish
+<ul>
+    <li style="font-size:34px">
+        Email: mark[at]datapolitan[dot]com
+    </li>
+</ul>
+
 
 <!-- ### Richard Dunks
 <ul>
     <li style="font-size:34px">
         Email: training[at]datapolitan[dot]com
     </li>
-    <!-- <li style="font-size:34px">
+    <li style="font-size:34px">
         Website: <a href="http://www.datapolitan.com">http://www.datapolitan.com</a>
     </li>
     <li style="font-size:34px">
