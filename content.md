@@ -39,21 +39,13 @@ class:center,middle
 
 ---
 
+exclude:true
 # [Zoom Drill](https://vimeo.com/407215417)
 ???
 + Facilitators will cover the following skills: muting themselves, stopping their video, typing in chat box, raising their hand, sharing their screen
-
---
-
 + Mute and Unmute your microphone
---
-
 + Start and Stop your video
---
-
 + Post a message in the Chat window with your name and computer operating system (Windows or MacOS)
---
-
 + Click the Participants window and Raise your hand 
 
 ---
@@ -83,10 +75,21 @@ class:center,middle
 
 ---
 
-# Introduce Yourself to Your Neighbor
+# Introducing Yourself
+--
+
+## Share with your neighor
+--
+
 + Who you are
+--
+
 + Where you work
-+ What are you hoping to learn today?
+--
+
++ What you hoping to learn today
+--
+
 + What you've done with code (any code)
 
 ---
@@ -232,8 +235,8 @@ name:housekeeping
 
 # [RStudio Introduction](https://www.rstudio.com/)
 
-![img-center-80](images/rstudio_annotated.png)
-### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
+![img-center-100](images/rstudio_annotated.png)
+<!-- ### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`] -->
 
 ???
 + Introduce students to Console, Environment, and Help
@@ -257,7 +260,7 @@ name:housekeeping
 
 # R Syntax
 
-```R
+```r
 # basic command
 
 command(dataset)
