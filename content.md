@@ -164,7 +164,7 @@ name:housekeeping
 
 >“Analysis is simply the pursuit of understanding, usually through detailed inspection or comparison”
 
-## - [Carter Hewgley](https://www.linkedin.com/in/carterhewgley), Senior Advisor for Family & Homeless Services, Department of Human Services, District of Columbia
+## - [Carter Hewgley](https://www.linkedin.com/in/carterhewgley)
 
 ???
 + Orient students to key concept in analysis
