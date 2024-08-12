@@ -39,9 +39,9 @@ hist(faithful$waiting)
 hist(faithful$eruptions)
 
 plot(faithful, main="Eruptions of Old Faithful", xlab="Eruption Time in Minutes", ylab="Waiting Time to Next Eruption in Min")
-abline(lm(faithful$waiting~faithful$eruptions), col="red")
+abline(lm(faithful$waiting~faithfu?l$eruptions), col="red")
 
-# Now we want to work on sorting and filtering the data we had above
+# Now we want to work on sorting and filtering? the data we had above
 
 # Sorting by eruption times (ascending)
 

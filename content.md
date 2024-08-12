@@ -383,7 +383,7 @@ name:nola
 ---
 
 # And Here's the R Code for It
-[![img-center-85](images/smoke_signals_github_outline.png)](https://github.com/enigma-io/smoke-signals-model)
+[![img-center-80](images/smoke_signals_github_outline.png)](https://github.com/enigma-io/smoke-signals-model)
 [Click here for the code](https://github.com/enigma-io/smoke-signals-model)
 
 ---
@@ -580,7 +580,7 @@ abline(lm(faithful$waiting~faithful$eruptions), col="red")
 --
 
 
-![img-center-55](images/datavis-r.png)
+![img-center-45](images/datavis-r.png)
 
 ???
 + Students will understand the problem we're seeking to solve in class
@@ -852,7 +852,7 @@ _And fixing them_
 + have documentation at end of slides
 
 ---
-
+exclude:true
 class:center,middle
 # <a href="https://script.google.com/a/macros/datapolitan.com/s/AKfycbwMcE5pcJwZHdbSCN_2epwaXnRLSRPaLbHCAhxaZJ79UXaRpQ_l/exec" target="_blank">Click to submit your work</a>
 
@@ -901,7 +901,7 @@ class:center,middle
 
 ---
 
-# Taking This Out of the Classroom
+# Using This in the Real World
 ???
 + Facilitators reinforce key learning points with participants for integrating into their workflow
 --
@@ -933,7 +933,7 @@ name:resources
 
 ---
 
-# Learning and Practicing More with R
+# Resources for Learning R
 --
 
 + [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) - Free online book with code examples meant for non-programmers
@@ -955,9 +955,6 @@ name:resources
 # Other Useful Resources
 --
 
-+ [NYC Open Statistical Programming Meetup](https://www.meetup.com/nyhackr) - Monthly talks about R and sponsor of the [NYC R Conference](http://www.rstats.nyc/)
---
-
 + [Tidyverse](https://www.tidyverse.org) - R packages for Data Science
 --
 
@@ -968,19 +965,22 @@ name:resources
 --
 
 + [Stack Overflow](https://stackoverflow.com/questions) - One of the best Q&A sites for technology
---
-
-+ [Class handout](workbook.pdf)
---
-
-+ [Datapolitan training classes](https://www.datapolitan.com/) - The online home of our training materials
 
 ???
++ Also [NYC Open Statistical Programming Meetup](https://www.meetup.com/nyhackr) - Monthly talks about R and sponsor of the [NYC R Conference](http://www.rstats.nyc/)
 + Students will have key resources for moving forward in their learning
++ [Class handout](workbook.pdf)
++ [Datapolitan training classes](https://www.datapolitan.com/) - The online home of our training materials
+
 
 ---
 
-## .center[Contact Information]
+# Contact Information
++ [Email me](mailto:richard[at]datapolitan[dot]com)
++ Check out [my website](https://wwww.datapolitan.com)
++ Connect on [Twitter](https://twitter.com/Datapolitan)
++ Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/)
++ Follow us on [Instagram](https://www.instagram.com/datapolitan/)
 
 <!-- ## Julia Marden
 + Email: julia[at]tinypanther[dot]com
@@ -1002,7 +1002,7 @@ name:resources
       Blog: <a href="https://reshamas.github.io/">https://reshamas.github.io/</a>
     </li>
 </ul>
- -->
+
 
 ### Elizabeth DiLuzio
 <ul>
@@ -1022,7 +1022,7 @@ name:resources
 </ul>
 
 
-<!-- ### Richard Dunks
+ ### Richard Dunks
 <ul>
     <li style="font-size:34px">
         Email: training[at]datapolitan[dot]com
@@ -1032,12 +1032,12 @@ name:resources
     </li>
     <li style="font-size:34px">
         Twitter: <a href="https://twitter.com/datapolitan">@datapolitan</a>
-    </li> -->
+    </li> 
 </ul>
 
 
 
-<!-- ## Richard Dunks
+## Richard Dunks
 + Email: training[at]datapolitan[dot]com
  -->
 
