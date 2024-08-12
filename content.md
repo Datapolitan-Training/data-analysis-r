@@ -2,7 +2,7 @@ layout:true
 
 <div class="header">
   
-  <p class="header-text">Class Title</p>
+  <p class="header-text">Data Analysis with R</p>
 </div>
 <div class="footer">
   <p class="footer-text">
@@ -18,17 +18,17 @@ class: center,middle
 
 ![img-center-50](images/datapolitan-logo-01.svg)
 
-# Class Title
+# Data Analysis with R
 
 - - -
 
 ## Facilitator: Richard Dunks
 
-### Follow along at: 
+### Follow along at: http://bit.ly/data-analysis-r
 
-#### See the code at: 
+#### See the code at: http://bit.ly/data-analysis-r-code
 
-<p class="license-text"><strong><strong>Class Title</strong></strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+<p class="license-text"><strong><strong>Data Analysis with R</strong></strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> and <a href="https://juliaem.wordpress.com/"  property="cc:attributionName">Julia Marden</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img style="border-width:0;width:8%" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 
@@ -83,30 +83,1121 @@ class:center,middle
 
 ---
 
-# Ground Rules
+# Introduce Yourself to Your Neighbor
++ Who you are
++ Where you work
++ What are you hoping to learn today?
++ What you've done with code (any code)
 
 ---
 
-# Introductions
+# What to Expect Today
+--
+
++ Introduction to R
+--
+
++ Using R in Data Analysis
+--
+
++ Getting Familiar: R Syntax + R Studio
+--
+
++ 311 Data Analysis
+--
+
++ Presentations!
 
 ---
 
-# Resources
+# Key Skills
+
+--
+
++ R syntax and commands
+--
+
++ [RStudio](https://www.rstudio.com/)
+--
+
++ Load data
+--
+
++ Explore data
+--
+
++ Wrangle data
+--
+
++ Visualize data
+
+???
++ Students will review progress and give feedback on key takeaways
 
 ---
 
-# Final Thought
+name:housekeeping
+# Housekeeping
+--
+
++ We’ll have one 15 minute break in the morning
+--
+
++ We’ll have an hour for lunch
+--
+
++ We’ll have a 15 minute break in the afternoon
+--
+
++ Class will start promptly after breaks
+--
+
++ Feel free to use the bathroom if you need during class
+--
+
++ Please take any phone conversations into the hall to not disrupt the class
 
 ---
 
-# Contact Information
-+ [Email me](mailto:richard[at]datapolitan[dot]com)
-+ Check out [my website](https://wwww.datapolitan.com)
-+ Connect on [Twitter](https://twitter.com/Datapolitan)
-+ Connect on [LinkedIn](https://www.linkedin.com/in/richarddunks/)
-+ Follow us on [Instagram](https://www.instagram.com/datapolitan/)
+# What is Analysis?
+--
+
+>“Analysis is simply the pursuit of understanding, usually through detailed inspection or comparison”
+
+## - [Carter Hewgley](https://www.linkedin.com/in/carterhewgley), Senior Advisor for Family & Homeless Services, Department of Human Services, District of Columbia
+
+???
++ Orient students to key concept in analysis
++ Use R to uncover meaning in data
+
+---
+# The Analytical Process
+
+![img-center-80](images/valuechain.png)
+
+???
++ Establish frame for the analytics process to be followed in class
++ Familiarize students with terminology (esp "data wrangling/data cleaning")
++ Demystify the process
++ Empower students to do analysis
+
+---
+
+# Exercise: Old Faithful
+
+
+![img-center-70](images/old_faithful.jpeg)
+.caption[Image Credit: Astroval1, [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0) via [Wikimedia Commmons](https://commons.wikimedia.org/wiki/File%3ABig_Dipper_Ursa_Major_over_Old_Faithful_geyser_Yellowstone_National_Park_Wyoming_Astrophotography.jpg)]
+
+
+???
++ Facilitator provides context for the exercise by describing Old Faithful
++ Students will download script with prepared code snippets to run
++ Students will learn the steps of running summary statistics in R
+
+---
+
+# Identify the Question
+--
+
++ What's the minimum amount of time I should plan to spend at Old Faithful?
+--
+
++ Is there a relationship between the amount of time I wait and the length of time it erupts?
+--
+
+???
++ Students will understand the problem we're seeking to solve in class
++ Students will learn by example the value of problem setting.
++ This will be done by writing out explicit problem statement for 311 Noise, possibly vision 0 db after we have exercise.
+
+---
+
+# Exercise: Old Faithful
+
+![img-center-85](images/faithfulvis.png)
+
+#### [Click to download the `faithful_a.R` code for this exercise (already loaded in RStudio)](code/faithful_a.R)
+
+???
++ Students will open and load a simple dataset.
++ They will inspect the data in the viewer and confirm it loaded properly.
++ This will be done by live demo of code
++ Students will be writing code themselves
++ Introduce basic commands and tab completion
++ Describe comments and their purpose
++ Emphasize cooperation between participants
+
+---
+
+# [RStudio Introduction](https://www.rstudio.com/)
+
+![img-center-80](images/rstudio_annotated.png)
+### Find your student number and link in your workbook<br>.red[Username and Password: `rstudio`]
+
+???
++ Introduce students to Console, Environment, and Help
++ Students will be familiar with the key features of the console for the exercises to come
++ This will be done by live demo and verbal discussion
++ Ctrl+L clear console
+
+---
+
+# What is Syntax?
+--
+
+![img-center-80](images/syntax.png)
+.caption[Image Credit: AnonMoos, Public Domain via [Wikipedia](https://commons.wikimedia.org/wiki/File%3ABasic_constituent_structure_analysis_English_sentence.svg)]
+
+???
++ Students will get vocabulary for accomplishing tasks in code
++ This will be done with an overview discussion
+
+---
+
+# R Syntax
+
+```R
+# basic command
+
+command(dataset)
+View(faithful)
+
+```
+???
++ Facilitator guides students through basic syntax in R for simple tasks
++ Instructor reinforces syntax idea and relation to regular sentence structure to convey meaning where appropriate
+--
+
+```R
+# select a column
+
+command(dataset$column)
+mean(faithful$waiting)
+
+```
+--
+
+```R
+# get help
+
+?help
+?faithful
+
+```
+
+---
+
+# Your Turn 1
+--
+
++ Look through the code we just wrote
+--
+
++ Make a change to one thing on the chart
+--
+
++ If necessary, check out the help documentation
+--
+
++ Be ready to describe what you did
+
+---
+
+![img-right-40](images/r_logo.png)
+# What is R?
+--
+
++ Statistical programming language
+--
+
++ [Open-source](https://opensource.com/resources/what-open-source)
+--
+
++ Made for and by people who work with data
+--
+
++ Used for data analysis
+--
+
++ For the history of R, [see this video](https://www.coursera.org/lecture/r-programming/overview-and-history-of-r-pAbaE)
+
+???
+
++ Familiarize students with basics of R and set context
++ "Created for and by the people" - Julia Marden
+
+---
+
+# R vs. Excel
+???
++ Facilitator compares R directly to Excel for context (assuming most participants are well-acquainted with Excel)
+--
+
++ R is a _programming language_ while Excel is an _application_ 
+--
+
++ R can work with much larger datasets than Excel
+--
+
++ R can perform more complex operations than Excel
+--
+
++ R commands can be easily saved, re-run, and automated
+--
+
++ R doesn't have the icons, animations, and wizards of Excel
+
+---
+
+name:nola
+# New Orleans Distributes Smoke Alarms
+
+![img-center-40](images/neworleansfire.jpeg)
+.caption[Image Credit: Michael Barnett [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons]
+
+???
++ Students will be inspired to use their knowledge in practical applications
+
+---
+
+# Targeted Outreach Saves Lives
+
+![img-center-90](images/nolasmokealarm.png)
+.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
+???
++ Students will be inspired to use their knowledge in practical applications
+
+
+---
+
+# Targeted Outreach Saves Lives
+
+![img-center-90](images/nolaimpact.png)
+.caption[Image Credit: City of New Orleans, via [nola.gov](http://nola.gov/performance-and-accountability/nolalytics/files/full-report-on-analytics-informed-smoke-alarm-outr/)]
+
+???
++ Students will be inspired to use their knowledge in practical applications
+
+---
+
+# And Here's the R Code for It
+[![img-center-85](images/smoke_signals_github_outline.png)](https://github.com/enigma-io/smoke-signals-model)
+[Click here for the code](https://github.com/enigma-io/smoke-signals-model)
+
+---
+
+class:center,middle
+# Wrap-Up
+
+---
+
+class:center, middle
+# 15 Min Break
+![img-center-100](images/real_programmers.png)
+Source: https://xkcd.com/378/
+
+---
+
+# 5 Data Analytics Tasks
+--
+
+1. Sorting
+--
+
+2. Filtering
+--
+
+3. Aggregating (PivotTable)
+--
+
+4. Transforming
+--
+
+5. Visualizing
+
+---
+
+# 1. Sorting
+--
+
++ Reorganize rows in a dataset based on the values in a column
+--
+
++ Can sort on multiple columns
+
+---
+
+# Sorting in R
+--
+
++ Use [`order()`](https://www.r-bloggers.com/r-sorting-a-data-frame-by-the-contents-of-a-column/)
+--
+
++ Specify the column you want to sort by<br>(in our case `eruptions` or `waiting`)
+--
+
+```r
+df[order(df$column_to_sort_by),]
+```
+--
+
+## Your Turn 2
++ Sort the Old Faithful data to find the shortest waiting time
++ Sort the Old Faithful data to find the longest waiting time
+
+???
++ Why the comma?
++ The syntax is `df[row specifier, column specifier]`.
++ If a specifier is absent, R returns all.
+---
+
+# 2. Filtering
+--
+
++ Only show rows that contain some value
+--
+
++ Can filter by multiple values
+--
+
++ Can filter by values in multiple columns
+
+---
+
+# Filtering in R
+--
+
++ Provide some logical test (`<`, `>`, `==`, etc.)
+--
+
++ The format is
+--
+
+```r
+df[df$column_to_filter_by <logical test>,]
+```
+
+--
+## Your Turn 3
++ Filter the Old Faithful data for all eruptions longer than 4 minutes
+
+---
+
+# 3. Aggregating Data 
+--
+
++ Trends only become clear in aggregate
+--
+
++ Often where you discover the "so what"
+--
+
++ Aggregating data meaningfully can be tricky
+--
+
++ We'll be showing how to do this with R later
+
+---
+
+# 4. Transforming Data
+--
+
++ Sometimes available categories don't make sense
+--
+
++ Values may not be in the format you need (or have mistakes)
+--
+
++ You always want to have a clean copy of the data to go back to
+--
+
++ Best to keep track of what you've done
+--
+
++ We'll be showing how to do this with R later
+
+---
+
+# 5. Visualizing Data
+--
+
++ Quickly communicate information
+--
+
++ Tell a clearer story
+--
+
++ A picture is worth a thousands words
+--
+
++ We've already seen this with the Old Faithful data
+
+```r
+hist(faithful$waiting)
+hist(faithful$eruptions)
+
+plot(faithful, main="Eruptions of Old Faithful", xlab="Eruption Time in Minutes", ylab="Waiting Time to Next Eruption in Min")
+abline(lm(faithful$waiting~faithful$eruptions), col="red")
+```
+
+---
+
+# 5 Data Analytics Tasks
+
+1. Sorting
+2. Filtering
+3. Aggregating (PivotTable)
+4. Transforming
+5. Visualizing
+
+---
+
+# Derelict Vehicles
+
+![img-center-90](images/derelictvan.png)
+
+.center[Derelict Vehicles Across NYC]
+
+---
+# The Analytical Process
+
+![img-center-80](images/valuechain.png)
+
+---
+
+# Identify the Question
+--
+
++ How many people complain about derelict vehicles?
+--
+
++ Do people complain more at a particular time of day?
+--
+
++ Do people complain more in a particular neighborhood or borough?
+--
+
+
+![img-center-55](images/datavis-r.png)
+
+???
++ Students will understand the problem we're seeking to solve in class
++ Students will learn by example the value of problem setting.
++ This will be done by writing out explicit problem statement for 311 Noise, possibly vision 0 db after we have exercise.
+
+---
+
+# Exercise: 311 Service Requests
+--
+
++ Open the `311_a.R` script (already loaded in RStudio)
+--
+
++ Follow along the code as we load the dataset
+--
+
++ You can [download the code here](code/311_a.R)
+--
+
++ The [data dictionary](https://data.cityofnewyork.us/api/views/erm2-nwe9/files/68b25fbb-9d30-486a-a571-7115f54911cd?download=true&filename=311_SR_Data_Dictionary_2018.xlsx)
+explains each column
+
+???
++ Students will conduct the same commands from Faithful with 311 exercise
++ Students will hit the roadblocks
++ Can't run summary statistics
++ Exercise will be run through script showing comments (not on slide)
++ Script will mirror the Faithful with intention of not working
+
+---
+
+# R Data Types
+
++ [Numeric](http://www.r-tutor.com/r-introduction/basic-data-types/numeric) vs [Factor](https://www.stat.berkeley.edu/~s133/factors.html)
+--
+
+![img-center-80](images/ice_cream.jpeg)
+
+
+
+???
++ Students will understand a few of the different data types in R
++ They will use the `str` and `summary` command
++ This will be done with a live demo of code
+
+---
+
+# R Data Structures
+--
+
++ [Vectors](http://www.r-tutor.com/r-introduction/vector) and [matrices](http://www.r-tutor.com/r-introduction/matrix) (single data types)
+--
+
++ [Lists](http://www.r-tutor.com/r-introduction/list) and [data frames](http://www.r-tutor.com/r-introduction/data-frame) (mixed data types)
+--
+
+
+![img-center-100](images/dataframe.png)
+
+--
+
++ You often need to restructure your data to make it usable
+
+
+???
++ Students will review work done in simple data load
++ They will learn key elements of data structures based on Faithful data
++ This will be done with live demo and discussion
++ They will use the `str` and `summary` command
+
+---
+
+class:center, middle
+# Wrap-Up
+
+???
++ Facilitator reviews the learning in the morning with participants
++ Facilitator answers any questions
++ If there is time, facilitator has participants switch and review someone else's code, then has them reflect on what they learned looking at someone else's code
+
+---
+
+
+class:center, middle
+# Lunch
+![img-center-60](images/automation.png)
+Source: https://xkcd.com/1319/
+
+---
+
+class:center, middle
+# Welcome Back!
+
+---
+
+# Data Wrangling (i.e. Cleaning)
+--
+
++ Get data into right type or structure
+--
+
++ Create subsets
+--
+
++ Add packages to work with the data we have
+
+???
++ start of section discussing manipulating data
++ picking up pieces from exercise where script failed
++ start of exercise 3
+
+---
+
+# Packages
+--
+
++ Add-ons: extra functions, data viz, special features
+--
+
++ Can help you load data, work with timestamps, create charts
+--
+
++ If you need to do something, there's probably a package for it
+
+--
++ To use: `install.packages()`
+
+???
++ Students will understand the purpose and value of packages
++ This will be done with a discussion
+
+---
+
+# Exercise: 311 Service Requests
+
+![img-center-80](images/datavis-r.png)
+
+#### [Click to download the `311_b.R` code for this exercise (already loaded in RStudio)](code/311_b.R)
+
+???
++ An example question of the 311 dataset
++ students will be walked through the exercise with a script
++ Prompts in the script with a more specific question
++ incidents per borough -> distribution of complaints
+
+
+---
+
+# Your Turn 4
+--
+
++ Switch out derelict vehicles for another complaint type
+--
+
++ Look at a different borough, ZIP, or community board
+--
+
++ Look at day of the week instead of hour
+--
+
++ Challenge yourself
+--
+
++ We'll be around to help
+
+---
+
+class:center,middle
+# It All Begins With a Question
+
+???
++ Students will understand better the purpose of using code for analysis
++ Remind them we all have hypothesis -> need to be acknowledged
+
+---
+
+# Questions
+--
+
++ How many?
+--
+
++ Where?
+--
+
++ When?
+--
+
+## What are some of your questions of this data?
+
+???
++ Prompts for starting your investigation of the data
++ Students will have a way to start exploring data
++ Discussion leading into guided exercise
+
+---
+
+# Your Turn 5
+--
+
++ Working in pairs or alone, start working on a question that interests you
+--
+
++ Start with a new script and give it a name
+--
+
++ Use the skills we've covered
+--
+
++ Challenge yourself to do something new
+--
+
++ Don't be afraid of not knowing
+--
+
++ Use the documentation
+--
+
++ Help each other out
+--
+
++ We'll be around to help
+
+---
+
+class:center, middle
+# 15 Min Break
+![img-center-80](images/here_to_help.png)
+Source: https://xkcd.com/1831/
+
+---
+
+# Debugging
+--
+
++ Everyone gets errors all the time
+--
+
++ It's just a matter of how complex they are<br>
+--
+_And fixing them_
+--
+
++ **Syntax errors** -> using the wrong instructions
+--
+
++ **Semantic errors** -> doing the wrong things
+--
+
++ When in doubt, take a breath, try breaking things apart into smaller pieces, review the documentation, and search for help
+
+???
++ Students will be introduced to key concepts in identifying and resolving errors
++ This will be done with a lecture/discussion leading into an exercise
++ Class exercise finding errors in code -> slide with code snippets in Markdown with errors
++ deal with issue of correctness
+
+---
+
+# Exercise
+
++ Debug your neighbor's R Script and verify results
+
+???
++ Students will examine another student's code, run the code, and fix any errors
++ Students will have a better understanding of how to think in code
++ Goal is to get students talking to each other about their code
++ have documentation at end of slides
+
+---
+
+class:center,middle
+# <a href="https://script.google.com/a/macros/datapolitan.com/s/AKfycbwMcE5pcJwZHdbSCN_2epwaXnRLSRPaLbHCAhxaZJ79UXaRpQ_l/exec" target="_blank">Click to submit your work</a>
 
 ---
 
 class:middle,center
-# Thank You!
+# Code Review
+
+???
++ Students will review select code examples
++ Goal is to model a collaborative process for data analysis
++ Time buffer for end of class
+
+---
+
+class:center,middle
+# Wrap Up
+
+---
+
+# Key Skills
+--
+
++ R syntax and commands
+--
+
++ [RStudio](https://www.rstudio.com/)
+--
+
++ Load data
+--
+
++ Explore data
+--
+
++ Wrangle data
+--
+
++ Visualize data
+--
+
++ Anything else?
+
+???
++ Students will review progress and give feedback on key takeaways
+
+---
+
+# Taking This Out of the Classroom
+???
++ Facilitators reinforce key learning points with participants for integrating into their workflow
+--
+
++ R is a powerful tool for cleaning, analyzing, and visualizing data
+--
+
++ Integrating it into your workflow takes practice and a commitment to not giving up (Google is your friend)
+--
+
++ [RStudio](https://www.rstudio.com/) makes it easy to get started
+--
+
++ You should be able to [download R and RStudio on your work computer](https://ayeimanol-r.net/2014/01/16/getting-started-installation-of-rstudio-and-some-packages-using-ggplot-to-make-a-simple-plot/) (Use the zip/tarball option)
+
+---
+name:resources
+
+# Key Links
+--
+
++ [Download R](https://cloud.r-project.org/)
+--
+
++ [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
+--
+
++ [Download exercise files from this class](http://bit.ly/data-analysis-r-code) 
+
+---
+
+# Learning and Practicing More with R
+--
+
++ [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) - Free online book with code examples meant for non-programmers
+--
+
++ [R for Data Science](https://r4ds.had.co.nz/)- Free online book covering basic topics in data science with R
+--
+
++ [R Cookbook](http://www.cookbook-r.com) - Free online walkthrough of the basics
+--
+
++ [R Programming Coursera Course](https://www.coursera.org/learn/r-programming) - Free course in R that runs regularly
+--
+
++ [Swirl](http://swirlstats.com) - Interactive learning inside of R `install.packages(“swirl”)`
+
+---
+
+# Other Useful Resources
+--
+
++ [NYC Open Statistical Programming Meetup](https://www.meetup.com/nyhackr) - Monthly talks about R and sponsor of the [NYC R Conference](http://www.rstats.nyc/)
+--
+
++ [Tidyverse](https://www.tidyverse.org) - R packages for Data Science
+--
+
++ [Stat Methods](http://statmethods.net) - Great documentation for doing data analysis in R
+--
+
++ [UCLA Stats](https://stats.idre.ucla.edu/other/dae/) - Many examples of statistical analysis with comparisons between R, Stata, SPSS, etc.
+--
+
++ [Stack Overflow](https://stackoverflow.com/questions) - One of the best Q&A sites for technology
+--
+
++ [Class handout](workbook.pdf)
+--
+
++ [Datapolitan training classes](https://www.datapolitan.com/) - The online home of our training materials
+
+???
++ Students will have key resources for moving forward in their learning
+
+---
+
+## .center[Contact Information]
+
+<!-- ## Julia Marden
++ Email: julia[at]tinypanther[dot]com
++ Website: http://tinypanther.com
++ Twitter: [@juliaem](https://twitter.com/juliaem)
+ -->
+
+
+<!-- ## Alfred Lee
++ LinkedIn: https://www.linkedin.com/in/leealfred/
+ -->
+
+<!-- ### Reshama Shaikh
+<ul>
+    <li style="font-size:34px">
+        LinkedIn, Github, Twitter: reshamas
+    </li>
+    <li style="font-size:34px">
+      Blog: <a href="https://reshamas.github.io/">https://reshamas.github.io/</a>
+    </li>
+</ul>
+ -->
+
+### Elizabeth DiLuzio
+<ul>
+  <li style="font-size:34px">
+        Email: elizabeth[at]datapolitan[dot]com
+    </li>
+  <li style="font-size:34px">
+        Twitter: <a href="https://twitter.com/lizdiluzio">@lizdiluzio</a>
+    </li>
+</ul>
+
+### Mark Yarish
+<ul>
+    <li style="font-size:34px">
+        Email: mark[at]datapolitan[dot]com
+    </li>
+</ul>
+
+
+<!-- ### Richard Dunks
+<ul>
+    <li style="font-size:34px">
+        Email: training[at]datapolitan[dot]com
+    </li>
+    <li style="font-size:34px">
+        Website: <a href="http://www.datapolitan.com">http://www.datapolitan.com</a>
+    </li>
+    <li style="font-size:34px">
+        Twitter: <a href="https://twitter.com/datapolitan">@datapolitan</a>
+    </li> -->
+</ul>
+
+
+
+<!-- ## Richard Dunks
++ Email: training[at]datapolitan[dot]com
+ -->
+
+
+---
+
+class:center, middle
+# THANK YOU!
+
+---
+
+# Exploring Data
+
+```R
+View()
+# show dataset as spreadsheet in Viewer
+```
+```R
+str()
+# identify data type and structure
+```
+```R
+nrow()
+# identify the number of rows
+```
+```R
+ncol()
+# identify the number of columns
+```
+```R
+colnames()
+# list the name of every column
+```
+
+---
+
+# Manipulate Data
+
+```R
+sort()
+# sort the values in a column
+```
+```R
+data.frame()
+# structure data into a matrix
+```
+```R
+subset()
+# extract data from a dataframe
+```
+
+---
+
+# Calculating Summary statistics
+
+```R
+min()
+# identify minimum value
+```
+```R
+max()
+# identify maximum value
+```
+```R
+median()
+# calculate median value
+```
+```R
+mean()
+# calculate mean value
+```
+
+---
+
+# Visualizing Data
+
+```R
+hist()
+# make a chart with numeric data
+```
+```R
+plot()
+# plot two numeric variables along an x-y axis
+```
+```R
+abline()
+# add a trendline to a plot
+```
+```R
+table()
+# make a table with factor data
+```
+```R
+prop.table()
+# make a table with percentages
+```
+```R
+barplot()
+# make a chart with factor data
+```
+
+---
+
+# dplyr
+
+```R
+install.packages("dplyr")
+require(dplyr)
+```
+```R
+tbl_df()
+# create a dataframe
+```
+```R
+filter()
+select()
+# create a subset; filter for rows, select for columns
+```
+```R
+mutate()
+# add a column
+```
+```R
+arrange()
+# sort rows by category
+```
+
+---
+
+# lubridate
+
+```R
+install.packages("lubridate")
+require(lubridate)
+```
+```R
+mdy_hms()
+# format timestamp into month, day, year, hour, min and second
+# other commands: mdy_hm, mdy, dmy, etc.
+```
+```R
+hour()
+# extract hour from timestamp
+# other commands: day, minute, second, etc.
+```
+---
+
+# ggplot2
+
+```R
+ggplot()
+# plot a dataframe
+```
+```R
+geom_bar()
+# make a proportional bar chart
+# alternative is geom_col()
+# used for factor data 
+```
+```R
+ggtitle()
+# add a title to a plot
+```
